@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fe492f4-6878-4e7c-aaa7-5a81b5919c1d" name="Default Changelist" comment="" />
+    <list default="true" id="5fe492f4-6878-4e7c-aaa7-5a81b5919c1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/arxspan_automation_testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/arxspan_automation_testing.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +19,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="225">
-                <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+              <first_editor relative-caret-position="209">
+                <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               </first_editor>
               <second_editor />
             </state>
@@ -25,7 +30,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers/get_driver_helper.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
+            <state relative-caret-position="190">
               <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
@@ -37,8 +42,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcases/login/login_test_admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-end-line="18" />
+            <state relative-caret-position="237">
+              <caret line="143" column="48" selection-start-line="143" selection-start-column="48" selection-end-line="143" selection-end-column="48" />
+              <folding>
+                <element signature="e#324#354#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -46,20 +54,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/testcases/notebook/notebook_share.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="80">
+              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="43" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="613" column="65" lean-forward="true" selection-start-line="613" selection-start-column="65" selection-end-line="613" selection-end-column="65" />
             </state>
           </provider>
         </entry>
@@ -78,45 +77,37 @@
       <find>TEST2</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/testcases/login/test_login_admin.py" />
         <option value="$PROJECT_DIR$/helpers/get_driver_helper.py" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/testcases/login/login_test_admin.py" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/testcases/notebook/notebook_share.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="225" />
-    <option name="y" value="27" />
-    <option name="width" value="1347" />
-    <option name="height" value="806" />
+    <option name="x" value="753" />
+    <option name="y" value="36" />
+    <option name="width" value="1368" />
+    <option name="height" value="943" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="drivers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
@@ -133,9 +124,11 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -156,7 +149,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in notebook_share.py">
+  <component name="RunManager" selected="Python tests.Unittests in login_test_admin.py">
     <configuration name="get_driver_helper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="arxspan_automation_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -208,8 +201,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in notebook_share.py" />
         <item itemvalue="Python tests.Unittests in login_test_admin.py" />
+        <item itemvalue="Python tests.Unittests in notebook_share.py" />
         <item itemvalue="Python.get_driver_helper" />
       </list>
     </recent_temporary>
@@ -228,15 +221,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_login_test_admin_py - 2019.01.13 at 15h 25m 36s.xml">
-      <configuration name="Unittests in login_test_admin.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_login_test_admin_py - 2019.01.13 at 15h 25m 49s.xml">
-      <configuration name="Unittests in login_test_admin.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_login_test_admin_py - 2019.01.13 at 15h 26m 00s.xml">
-      <configuration name="Unittests in login_test_admin.py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_login_test_admin_py - 2019.01.13 at 15h 38m 24s.xml">
       <configuration name="Unittests in login_test_admin.py" configurationId="tests" />
     </history-entry>
@@ -258,23 +242,32 @@
     <history-entry file="Unittests_in_notebook_share_py - 2019.01.13 at 16h 02m 02s.xml">
       <configuration name="Unittests in notebook_share.py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_login_test_admin_py - 2019.01.13 at 18h 02m 06s.xml">
+      <configuration name="Unittests in login_test_admin.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_login_test_admin_py - 2019.01.13 at 18h 03m 53s.xml">
+      <configuration name="Unittests in login_test_admin.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_login_test_admin_py - 2019.01.13 at 18h 06m 59s.xml">
+      <configuration name="Unittests in login_test_admin.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="225" y="27" width="1347" height="806" extended-state="0" />
+    <frame x="603" y="29" width="1094" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25942686" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25543994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2507003" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39915967" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.46175638" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32909605" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.37299034" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -324,12 +317,14 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/testcases/login/test_login_admin.py" />
-    <entry file="file://$PROJECT_DIR$/testcases/login/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/login/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/testcases/login/.pytest_cache/README.md" />
+    <entry file="file://$PROJECT_DIR$/testcases/login/ArxspanCookies.pkl" />
+    <entry file="file://$PROJECT_DIR$/testcases/login/ArxspanCookies" />
+    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py" />
     <entry file="file://$PROJECT_DIR$/helpers/get_driver_helper.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
+        <state relative-caret-position="190">
           <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
@@ -340,45 +335,27 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <first_editor relative-caret-position="209">
+            <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/login/.pytest_cache/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/login/ArxspanCookies.pkl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/login/ArxspanCookies">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="613" column="65" lean-forward="true" selection-start-line="613" selection-start-column="65" selection-end-line="613" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcases/login/login_test_admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="17" column="11" lean-forward="true" selection-start-line="17" selection-end-line="18" />
+        <state relative-caret-position="237">
+          <caret line="143" column="48" selection-start-line="143" selection-start-column="48" selection-end-line="143" selection-end-column="48" />
+          <folding>
+            <element signature="e#324#354#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testcases/notebook/notebook_share.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="80">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="43" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
