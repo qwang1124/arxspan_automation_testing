@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f5e3e4a7-4260-43f6-9584-050f58404d02" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_jane.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/createnotebook_admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="107" column="12" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_joe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="135" column="22" lean-forward="true" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_jane.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="63" column="64" lean-forward="true" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/arxspan_automation_testing" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/README.md" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/CreatNotebook_test_admin.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/notebook_shareaccept_jane.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/notebook_shareaccept_joe.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/createnotebook_test_admin.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/createnotebook_admin.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_joe.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_jane.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/__init__.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="711" />
+    <option name="y" value="54" />
+    <option name="width" value="1116" />
+    <option name="height" value="922" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="AAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AAT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AAT" type="462c0819:PsiDirectoryNode" />
+              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AAT" type="462c0819:PsiDirectoryNode" />
+              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AAT" type="462c0819:PsiDirectoryNode" />
+              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="experiment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AAT" type="462c0819:PsiDirectoryNode" />
+              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="AAT" type="b2602c69:ProjectViewProjectNode" />
+              <item name="AAT" type="462c0819:PsiDirectoryNode" />
+              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
+              <item name="testcases" type="462c0819:PsiDirectoryNode" />
+              <item name="notebook" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\QingW\Desktop\AAT\arxspan_automation_testing" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\QingW\Desktop\AAT\arxspan_automation_testing\testcases\notebook" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests for create_experiment_jane.TestCreateexperimentJane">
+    <configuration name="Unittests for create_experiment_jane.TestCreateexperimentJane" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AAT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;create_experiment_jane.TestCreateexperimentJane&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for create_experiment_jane.TestCreateexperimentJane.test_addprotocolfile_jane" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AAT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;create_experiment_jane.TestCreateexperimentJane.test_addprotocolfile_jane&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for create_experiment_joe.TestCreateexperimentJoe" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AAT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;create_experiment_joe.TestCreateexperimentJoe&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for create_experiment_joe.TestCreateexperimentJoe.test_addnote" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AAT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;create_experiment_joe.TestCreateexperimentJoe.test_addnote&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in create_experiment_joe.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="AAT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_joe.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests for create_experiment_jane.TestCreateexperimentJane" />
+        <item itemvalue="Python tests.Unittests for create_experiment_joe.TestCreateexperimentJoe" />
+        <item itemvalue="Python tests.Unittests for create_experiment_jane.TestCreateexperimentJane.test_addprotocolfile_jane" />
+        <item itemvalue="Python tests.Unittests in create_experiment_joe.py" />
+        <item itemvalue="Python tests.Unittests for create_experiment_joe.TestCreateexperimentJoe.test_addnote" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f5e3e4a7-4260-43f6-9584-050f58404d02" name="Default Changelist" comment="" />
+      <created>1547560328582</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1547560328582</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_notebook_share_py - 2019.01.15 at 09h 08m 23s.xml">
+      <configuration name="Unittests in notebook_share.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_CreatNotebook_test_admin_TestCreatenotebookAdmin_testsharenotebook - 2019.01.15 at 12h 14m 05s.xml">
+      <configuration name="Unittests for CreatNotebook_test_admin.TestCreatenotebookAdmin.testsharenotebook" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_create_experiment_joe_TestCreateexperimentJoe_test_addnote - 2019.01.16 at 09h 27m 19s.xml">
+      <configuration name="Unittests for create_experiment_joe.TestCreateexperimentJoe.test_addnote" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_create_experiment_joe_TestCreateexperimentJoe_test_addnote - 2019.01.16 at 09h 27m 27s.xml">
+      <configuration name="Unittests for create_experiment_joe.TestCreateexperimentJoe.test_addnote" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_create_experiment_joe_TestCreateexperimentJoe_test_addnote - 2019.01.16 at 09h 29m 20s.xml">
+      <configuration name="Unittests for create_experiment_joe.TestCreateexperimentJoe.test_addnote" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_create_experiment_joe_py - 2019.01.16 at 09h 29m 41s.xml">
+      <configuration name="Unittests in create_experiment_joe.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_in_create_experiment_joe_py - 2019.01.16 at 09h 40m 36s.xml">
+      <configuration name="Unittests in create_experiment_joe.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_create_experiment_jane_TestCreateexperimentJane - 2019.01.16 at 15h 02m 04s.xml">
+      <configuration name="Unittests for create_experiment_jane.TestCreateexperimentJane" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_create_experiment_jane_TestCreateexperimentJane - 2019.01.16 at 15h 03m 03s.xml">
+      <configuration name="Unittests for create_experiment_jane.TestCreateexperimentJane" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_create_experiment_joe_TestCreateexperimentJoe - 2019.01.16 at 15h 07m 47s.xml">
+      <configuration name="Unittests for create_experiment_joe.TestCreateexperimentJoe" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="711" y="54" width="1116" height="922" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24953617" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32953104" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32953104" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39923954" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32953104" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32953104" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_joe.py</url>
+          <line>124</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/login/loginreport/1d54aa09-a36e-4142-9aad-ec157f367342-attachment.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/PycharmProjects/FirstSeleium/ArxspanAutomationTest/notebook_test/createnotebook_test_admin.py" />
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/notebook_shareaccept_joe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/login/login_test_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2273">
+          <caret line="16" column="47" lean-forward="true" selection-start-line="16" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="272">
+            <caret line="16" column="13" selection-start-line="16" selection-end-line="16" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/notebook_shareaccept_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/createnotebook_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="107" column="12" selection-start-line="107" selection-start-column="4" selection-end-line="107" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Python37/Lib/unittest/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="614" selection-start-line="614" selection-end-line="614" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_joe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="135" column="22" lean-forward="true" selection-start-line="135" selection-start-column="22" selection-end-line="135" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="63" column="64" lean-forward="true" selection-start-line="63" selection-start-column="64" selection-end-line="63" selection-end-column="64" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
