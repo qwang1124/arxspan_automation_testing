@@ -25,7 +25,11 @@ class TestCreateexperimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#addFileDiv > form > section.bottomButtons.buttonAlignedRight > '
                                                      'button')
         button.click()
+        # check attachment is successful and displayed
         driver.find_element_by_id('attachmentTable_tab').click()
+        assert driver.find_element_by_id('file_p_15661_name_quick_link').click().is_displayed()
+        # remove the file
+        driver.find_element_by_class_name('littleButton').click()
 
     def test_addhistologyfile_jane(self):
         driver = testjanelogin()
@@ -40,16 +44,17 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.find_element_by_id('attachmentTable_tab').click()
 
     def test_addhistologyanalysis_jane(self):
-         driver = testjanelogin()
-         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
-         driver.find_element_by_id('addFile_tab').click()
-         elm = driver.find_element_by_id('file1')
-         elm.send_keys('C:\\Users\\QingW\\Downloads\\fwdtestscriptsandtestingfiles\\Alports Histology Analysis.pdf')
-         time.sleep(2)
-         button = driver.find_element_by_css_selector('#addFileDiv > form > section.bottomButtons.buttonAlignedRight > '
+        driver = testjanelogin()
+        driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
+        driver.find_element_by_id('addFile_tab').click()
+        elm = driver.find_element_by_id('file1')
+        elm.send_keys('C:\\Users\\QingW\\Downloads\\fwdtestscriptsandtestingfiles\\Alports Histology Analysis.pdf')
+        time.sleep(2)
+        button = driver.find_element_by_css_selector('#addFileDiv > form > section.bottomButtons.buttonAlignedRight > '
                                                       'button')
-         button.click()
-         driver.find_element_by_id('attachmentTable_tab').click()
+        button.click()
+        # check attachment is successful and displayed
+        driver.find_element_by_id('attachmentTable_tab').click()
 
     def test_addXenograft_jane(self):
         driver = testjanelogin()
@@ -61,7 +66,10 @@ class TestCreateexperimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#addFileDiv > form > section.bottomButtons.buttonAlignedRight > '
                                                      'button')
         button.click()
+        # check attachment is successful and displayed
         driver.find_element_by_id('attachmentTable_tab').click()
+        # download the file
+        driver.find_element_by_class_name('littleButton').click()
 
     def test_createexperiment_Jane(self):
         driver = testjanelogin()
