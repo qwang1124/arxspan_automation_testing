@@ -1,31 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5fe492f4-6878-4e7c-aaa7-5a81b5919c1d" name="Default Changelist" comment="clean up the code.">
-      <change beforePath="$PROJECT_DIR$/.idea/arxspan_automation_testing.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/arxspan_automation_testing.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chromedriver.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/01114096-1fcf-4c2a-8022-fa8cfcfafb36-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/0548224d-336b-4406-8df6-1cf9f60f4bfa-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/1d54aa09-a36e-4142-9aad-ec157f367342-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/2155eab3-7abb-42cb-85fd-90c1848de558-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/2c2e3114-fe74-4de3-ab6e-1e949db463a2-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/2f9922a7-bc45-4edf-9f13-dc25129678e0-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/2ffb0990-3852-4555-99bb-6918fab2a867-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/30e45f74-2192-4742-81d4-baa9d6df378e-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/43ef47b6-b3d0-4123-897f-f81f84c660c1-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/594ba6c1-7fea-4bce-94c1-f0a13277df7d-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/5c28fced-e1b5-4b73-a618-0bec8d7dd517-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/861eb8cd-989a-4b90-8db5-be53854da2a7-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/898f4c4f-3ee9-40bf-81be-e28808aee858-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/8c270281-3bbe-4350-a955-fffa8b7272bf-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/97298ac6-8537-433f-8fb0-ea807b9bf758-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/bec71a82-1430-48b7-973c-6f49e5cc0a17-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/c8fa6e02-f833-4303-a253-b3f29a4c8598-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/f35bc0c0-5dc1-42cc-bf53-51d7e98f3fba-result.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/f56752fa-d1fb-490a-b604-3eadb2251e60-attachment.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/login/loginreport/f59530b1-abc4-497c-b417-6c389901ba94-attachment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
+    <list default="true" id="5fe492f4-6878-4e7c-aaa7-5a81b5919c1d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/run.sh" beforeDir="false" afterPath="$PROJECT_DIR$/run.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="255">
-                <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <first_editor relative-caret-position="30">
+                <caret line="2" column="12" selection-start-line="2" selection-end-line="3" />
               </first_editor>
               <second_editor />
             </state>
@@ -49,7 +26,11 @@
       </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run.sh">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="24" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -89,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testcases/login/login_test_admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-132">
+            <state relative-caret-position="210">
               <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
             </state>
           </provider>
@@ -136,10 +117,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="678" />
-    <option name="y" value="91" />
-    <option name="width" value="1223" />
-    <option name="height" value="806" />
+    <option name="x" value="684" />
+    <option name="y" value="92" />
+    <option name="width" value="1191" />
+    <option name="height" value="850" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -155,34 +136,6 @@
             <path>
               <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
               <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="testcases" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="testcases" type="462c0819:PsiDirectoryNode" />
-              <item name="experiment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="testcases" type="462c0819:PsiDirectoryNode" />
-              <item name="login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="testcases" type="462c0819:PsiDirectoryNode" />
-              <item name="notebook" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="b2602c69:ProjectViewProjectNode" />
-              <item name="arxspan_automation_testing" type="462c0819:PsiDirectoryNode" />
-              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -214,7 +167,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in login_test_admin.py">
+  <component name="RunManager" selected="Bash.run.sh">
+    <configuration name="run.sh" type="BashConfigurationType" factoryName="Bash" temporary="true">
+      <module name="arxspan_automation_testing" />
+      <option name="INTERPRETER_OPTIONS" value="bash" />
+      <option name="INTERPRETER_PATH" value="/usr/bin/env" />
+      <option name="PROJECT_INTERPRETER" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/run.sh" />
+      <option name="PARAMETERS" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="get_driver_helper" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="arxspan_automation_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -237,6 +201,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in /Users/stephenchen/PycharmProjects/arxspan_automation_testing/testcases/notebook/notebook_share.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="arxspan_automation_testing" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/notebook" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/notebook/notebook_share.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests in login_test_admin.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="arxspan_automation_testing" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -252,25 +231,11 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in notebook_share.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="arxspan_automation_testing" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/notebook" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/notebook/notebook_share.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Bash.run.sh" />
         <item itemvalue="Python tests.Unittests in login_test_admin.py" />
-        <item itemvalue="Python tests.Unittests in notebook_share.py" />
+        <item itemvalue="Python tests.Unittests in /Users/stephenchen/PycharmProjects/arxspan_automation_testing/testcases/notebook/notebook_share.py" />
         <item itemvalue="Python.get_driver_helper" />
       </list>
     </recent_temporary>
@@ -286,8 +251,16 @@
       <option name="presentableId" value="Default" />
       <updated>1547389693830</updated>
       <workItem from="1548020419094" duration="674000" />
-      <workItem from="1548021608486" duration="244000" />
+      <workItem from="1548021608486" duration="3988000" />
     </task>
+    <task id="LOCAL-00001" summary="clean up the code.">
+      <created>1548021904516</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1548021904518</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -323,24 +296,23 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="918000" />
+    <option name="totallyTimeSpent" value="4662000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="678" y="91" width="1223" height="806" extended-state="0" />
-    <editor active="true" />
+    <frame x="18" y="23" width="1191" height="850" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29466555" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30287206" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32913166" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46175638" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39973614" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39915967" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" visible="true" weight="0.32913166" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44817927" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.35714287" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.44663572" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -354,6 +326,32 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="clean up the code." />
@@ -407,16 +405,6 @@
     <entry file="file://$PROJECT_DIR$/testcases/login/ArxspanCookies" />
     <entry file="file:///usr/local/Cellar/python/3.7.1/Frameworks/Python.framework/Versions/3.7/lib/python3.7/unittest/case.py" />
     <entry file="file://$PROJECT_DIR$/testcases/notebook/notebook_share.py" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="255">
-            <caret line="17" selection-start-line="17" selection-end-line="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/get_driver_helper.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -445,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/login/login_test_admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-132">
-          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testcases/notebook/createnotebook_admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1531">
@@ -461,8 +442,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="30">
+            <caret line="2" column="12" selection-start-line="2" selection-end-line="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/login/login_test_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="43" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/run.sh">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
