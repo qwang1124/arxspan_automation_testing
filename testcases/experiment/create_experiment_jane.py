@@ -4,18 +4,22 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from webdriver_manager.chrome import ChromeDriverManager
+import allure
 
 
 class TestCreateexperimentJane(unittest.TestCase):
 
-    # def test_createexperiment_jane(self):
-    #     driver = testjanelogin()
-    #     driver.get('https://model.arxspan.com/arxlab/show-notebook.asp?id=10799')
-    #     driver.find_element_by_link_text('Biology Experiment').click()
-    #     driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
-    #     driver.find_element_by_id('e_details').send_keys('TESTING')
+    @allure.testcase('createexperiment')
+    def test1(self):
+        driver = testjanelogin()
+        driver.get('https://model.arxspan.com/arxlab/show-notebook.asp?id=10799')
+        driver.find_element_by_link_text('Biology Experiment').click()
+        driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
+        driver.find_element_by_id('e_details').send_keys('TESTING')
+        self.assertIn('TESTING', driver.find_element_by_id('e_details').text)
 
-    def test_addprotocolfile_jane(self):
+    @allure.testcase('addprotocolfile')
+    def test2(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -31,7 +35,8 @@ class TestCreateexperimentJane(unittest.TestCase):
         # remove the file
         driver.find_element_by_class_name('littleButton').click()
 
-    def test_addhistologyfile_jane(self):
+    @allure.testcase('addhistologyfile')
+    def test3(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -43,7 +48,8 @@ class TestCreateexperimentJane(unittest.TestCase):
         button.click()
         driver.find_element_by_id('attachmentTable_tab').click()
 
-    def test_addhistologyanalysis_jane(self):
+    @allure.testcase('addhistologyanalysis')
+    def test4(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -56,7 +62,8 @@ class TestCreateexperimentJane(unittest.TestCase):
         # check attachment is successful and displayed
         driver.find_element_by_id('attachmentTable_tab').click()
 
-    def test_addXenograft_jane(self):
+    @allure.testcase('addXenograft')
+    def test5(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -71,7 +78,8 @@ class TestCreateexperimentJane(unittest.TestCase):
         # download the file
         driver.find_element_by_class_name('littleButton').click()
 
-    def test_createexperiment_Jane(self):
+    @allure.testcase('signandwitness')
+    def test6(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com//arxlab//show-notebook.asp?id=10753')
         driver.find_element_by_link_text('Biology Experiment').click()
@@ -89,6 +97,10 @@ class TestCreateexperimentJane(unittest.TestCase):
         select = Select(driver.find_element_by_id('requesteeIdBox'))
         select.select_by_visible_text('Jane Biologist')
         driver.find_element_by_xpath("//button[contains(@onclick = \'clickSign();\')]").click()
+        # self.assertIn('1/14/2019 09:36:41 PM', driver.find_element_by_id('hd_9_235143').text)
+
+        # logout
+        driver.find_element_by_link_text('Logout').click()
 
 
 def testjanelogin():

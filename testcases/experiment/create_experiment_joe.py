@@ -4,42 +4,22 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from webdriver_manager.chrome import ChromeDriverManager
+import allure
 
 
 class TestCreateexperimentJoe(unittest.TestCase):
-
-    # def test_createexperiment(self):
-    #     driver = testjoelogin()
-    #     driver.find_element_by_id('createNewExperimentLeftNavButton').click()
-    #     select = Select(driver.find_element_by_id('newExperimentNotebookId'))
-    #     select.select_by_visible_text('Test_Notebook_QingWang')
-    #     select1 = Select(driver.find_element_by_id('newExperimentTypeList'))
-    #     select1.select_by_visible_text('Chemistry')
-    #     driver.find_element_by_tag_name('button').click()
-
-    #     driver.close()
-
-    #     driver.find_element_by_id('e_details').send_keys('test')
-    #     driver.find_element_by_id('uploadReaction').click()
-    #     driver.find_element_by_id('rxnFile').send_keys('C:\\Users\\QingW\\Downloads'
-    #                                                    '\\fwdtestscriptsandtestingfiles\\06epoxideopening.cdx')
-    #     time.sleep(2)
-    #     driver.find_element_by_xpath("//button[contains(@onclick, 'rxnFile')]").click()
-    #     driver.close()
-    #
-    #     test_value = driver.find_element_by_id('e_name').text
-    #     print(test_value)
-    #     a = 'Test_Notebook_QingWang - 004'
-    #     test_value2 = driver.find_element_by_link_text('Test_Notebook_QingWang - 004').text
-    #     b = 'Test_Notebook_QingWang - 004'
-    #
-    #     if a in test_value and b in test_value2:
-    #         valid = True
-    #     else:
-    #         valid = False
-    #     picture_name = 'TestCreateexperimentJoe_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
-    #     driver.get_screenshot_as_file(picture_name)
-    #     self.assertTrue(valid)
+    @allure.testcase('createexperiment')
+    def test1(self):
+        driver = testjoelogin()
+        driver.find_element_by_id('createNewExperimentLeftNavButton').click()
+        select = Select(driver.find_element_by_id('newExperimentNotebookId'))
+        select.select_by_visible_text('Test_Notebook_QingWang')
+        select1 = Select(driver.find_element_by_id('newExperimentTypeList'))
+        select1.select_by_visible_text('Chemistry')
+        driver.find_element_by_tag_name('button').click()
+        # self.assertIn('1/14/2019 09:36:41 PM', driver.find_element_by_id('hd_9_235143').text)
+        self.assertIn('Test_Notebook_QingWang - 004', driver.find_element_by_id('e_name').text)
+        driver.close()
 
     # addnote: no text insert
 
@@ -60,12 +40,10 @@ class TestCreateexperimentJoe(unittest.TestCase):
     #     # driver.execute_script("arguments[0].innerHTML = 'Set text using innerHTML'", text)
     #     driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
 
-
-
-    #     # elm = driver.find_element_by_class_name('cke_editable cke_editable_themed cke_contents_ltr cke_show_borders')
-    #     # elm.send_keys(Keys.TAB)
-    #     # elm.click()
-    #     # elm.send_keys(u'TestExperimentNote0109')
+        # elm = driver.find_element_by_class_name('cke_editable cke_editable_themed cke_contents_ltr cke_show_borders')
+        # elm.send_keys(Keys.TAB)
+        # elm.click()
+        # elm.send_keys(u'TestExperimentNote0109')
     #     driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
 
         # frame = driver.find_element_by_tag_name("iframe")
@@ -77,7 +55,6 @@ class TestCreateexperimentJoe(unittest.TestCase):
         # time.sleep(2)
         # driver.close()
 
-
     #     driver.find_element_by_id('signExperimentButton').click()
     #     select = Select(driver.find_element_by_id('signStatusBox'))
     #     select.select_by_visible_text('Sign and Close')
@@ -86,35 +63,23 @@ class TestCreateexperimentJoe(unittest.TestCase):
     #     driver.find_element_by_xpath("//button[contains(@onclick = \'clickSign();\')]").click()
 
     # upload
-    # def test_addfile(self):
-    #     driver = testjoelogin()
-    #     driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235143')
-        # driver.find_element_by_id('uploadReaction').click()
-        # driver.find_element_by_id('rxnFile').send_keys('C:\\Users\\QingW\\Downloads'
-        #                                                '\\fwdtestscriptsandtestingfiles\\06epoxideopening.cdx')
-        # time.sleep(2)
-        # driver.find_element_by_xpath("//button[contains(@onclick, 'rxnFile')]").click()
-        #
-        # driver.quit()
 
-        # test_value = driver.find_element_by_id('NotebookTitle').text
-        # print(test_value)
-        # a = 'Test_Notebook_QingWang'
-        # test_value2 = driver.find_element_by_id('notebookOwnerSpan').text
-        # b = 'System Administrator'
-        # test_value3 =driver.find_element_by_id('notebookDescription').text
-        # print(test_value2)
-        # c = 'Test Script execution-01/01/2019'
-        #
-        # if a in test_value and b in test_value2 and c in test_value3:
-        #     valid = True
-        # else:
-        #     valid = False
-        #     picture_name = 'test_CreateNotebookAdmin_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
-        #     driver.get_screenshot_as_file(picture_name)
-        # self.assertTrue(valid)
+    @allure.testcase('uploadreaction')
+    def test3(self):
+        driver = testjoelogin()
+        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235143')
 
-    def test_addfile(self):
+        driver.find_element_by_id('e_details').send_keys('test')
+        driver.find_element_by_id('uploadReaction').click()
+        driver.find_element_by_id('rxnFile').send_keys('C:\\Users\\QingW\\Downloads'
+                                                       '\\fwdtestscriptsandtestingfiles\\06epoxideopening.cdx')
+        time.sleep(2)
+        driver.find_element_by_xpath("//button[contains(@onclick, 'rxnFile')]").click()
+        self.assertIn('test', driver.find_element_by_id('e_details').text)
+        driver.close()
+
+    @allure.testcase('addfile')
+    def test4(self):
         driver = testjoelogin()
         driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235248')
         driver.find_element_by_id('addFile_tab').click()
@@ -135,19 +100,21 @@ class TestCreateexperimentJoe(unittest.TestCase):
 
         driver.close()
 
-    #     test_value = driver.find_element_by_id('e_name').text
-    #     print(test_value)
-    #     a = 'Test_Notebook_QingWang - 004'
-    #     test_value2 = driver.find_element_by_link_text('Test_Notebook_QingWang - 004').text
-    #     b = 'Test_Notebook_QingWang - 004'
-    #
-    #     if a in test_value and b in test_value2:
-    #         valid = True
-    #     else:
-    #         valid = False
-    #     picture_name = 'TestCreateexperimentJoe_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
-    #     driver.get_screenshot_as_file(picture_name)
-    #     self.assertTrue(valid)
+    @allure.testcase('signandwitness')
+    def test5(self):
+        driver = testjoelogin()
+        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235143')
+        driver.find_element_by_id('signExperimentButton').click()
+        select = Select(driver.find_element_by_id('signStatusBox'))
+        select.select_by_visible_text('Sign and Close')
+        select = Select(driver.find_element_by_id('requesteeIdBox'))
+        select.select_by_visible_text('Jane Biologist')
+        driver.find_element_by_xpath("//button[contains(@onclick = \'clickSign();\')]").click()
+        self.assertIn('1/14/2019 09:36:41 PM', driver.find_element_by_id('hd_9_235143').text)
+
+        # logout
+        driver.find_element_by_link_text('Logout').click()
+        driver.close()
 
 
 def testjoelogin():
