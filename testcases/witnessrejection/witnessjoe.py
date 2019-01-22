@@ -9,12 +9,11 @@ import allure
 
 class TestWitnessJane(unittest.TestCase):
 
-    @allure.testcase('createexperiment')
+    @allure.testcase('witnessrejectionjoe')
     def test1(self):
         driver = testjoelogin()
         self.assertIn('Rejection', driver.find_element_by_class_name('notificationBodyTitle').text)
         driver.find_element_by_class_name('experimentCell').click()
-        # assert driver.find_element_by_id('plugin').is_displayed()
         button = driver.find_element_by_css_selector('#pageContentTD > div > a')
         button.click()
 
@@ -23,6 +22,11 @@ class TestWitnessJane(unittest.TestCase):
         driver.find_element_by_id('noteTable_tab').click()
         driver.find_element_by_css_selector('#note_68255_tr > td:nth-child(1) > a').click()
         self.assertIn('TESTING', driver.find_element_by_id('note_68255_description').text)
+        driver.find_element_by_id('signExperimentButton').click()
+        select = Select(driver.find_element_by_id('requesteeIdBox'))
+        select.select_by_visible_text('Jane Biologist')
+        # witness failed because experiment need review
+        driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
 
         driver.find_element_by_link_text('Logout').click()
         driver.close()

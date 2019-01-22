@@ -9,12 +9,11 @@ import allure
 
 class TestWitnessJane(unittest.TestCase):
 
-    @allure.testcase('createexperiment')
+    @allure.testcase('witnessrejectionjane')
     def test1(self):
         driver = testjanelogin()
         self.assertIn('CX Upgrade (Reg) TS Firefox - 001', driver.find_element_by_class_name('experimentCell').text)
         driver.find_element_by_class_name('experimentCell').click()
-        # assert driver.find_element_by_id('plugin').is_displayed()
         button = driver.find_element_by_css_selector('#witnessButtons > a:nth-child(2)')
         button.click()
         driver.find_element_by_id('reasonBox').send_keys('TESTING')

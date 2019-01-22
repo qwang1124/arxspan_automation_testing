@@ -6,7 +6,7 @@
 # Step description:
 #      1. Open the Chrome driver;
 #      2. Input the URL of login page;
-#      3. Input the Joe as the username;
+#      3. Input the Admin as the username;
 #      4. Input the password;
 #      5. Choose the different company;
 

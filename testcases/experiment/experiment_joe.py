@@ -18,7 +18,6 @@ class TestCreateexperimentJoe(unittest.TestCase):
         select1 = Select(driver.find_element_by_id('newExperimentTypeList'))
         select1.select_by_visible_text('Chemistry')
         driver.find_element_by_tag_name('button').click()
-        # self.assertIn('1/14/2019 09:36:41 PM', driver.find_element_by_id('hd_9_235143').text)
         self.assertIn('Test_Notebook_QingWang - 004', driver.find_element_by_id('e_name').text)
         driver.close()
 
