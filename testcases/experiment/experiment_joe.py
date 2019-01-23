@@ -21,46 +21,18 @@ class TestCreateexperimentJoe(unittest.TestCase):
         self.assertIn('Test_Notebook_QingWang - 004', driver.find_element_by_id('e_name').text)
         driver.close()
 
-    # addnote: no text insert
-
-    # def test_addnote(self):
-    #     driver = testjoelogin()
-    #     driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235143')
-    #     driver.find_element_by_id('addNoteButton').click()
-    #     driver.find_element_by_id('note_p_1638_name').sendkeys('Testing')
-    #     driver.find_element_by_id('cke_273').click()
-    #     driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
-    #
-    #     # Switch to frame failed
-    #
-    #     # driver.switch_to.frame(driver.find_element_by_class_name('cke_wysiwyg_frame cke_reset'))
-    #     # driver.switch_to.default_content()
-    #     text = driver.find_element_by_css_selector('body > p')
-    #     text.send_keys('11111111111')
-    #     # driver.execute_script("arguments[0].innerHTML = 'Set text using innerHTML'", text)
-    #     driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
-
-        # elm = driver.find_element_by_class_name('cke_editable cke_editable_themed cke_contents_ltr cke_show_borders')
-        # elm.send_keys(Keys.TAB)
-        # elm.click()
-        # elm.send_keys(u'TestExperimentNote0109')
-    #     driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
-
-        # frame = driver.find_element_by_tag_name("iframe")
-        # driver.switch_to.frame(frame)
-        # body = driver.find_element_by_tag_name("body")
-        # body.send_keys("some test here")
-        # button = driver.find_element_by_xpath('//a[@onclick="clickSave();"]')
-        # button.click()
-        # time.sleep(2)
-        # driver.close()
-
-    #     driver.find_element_by_id('signExperimentButton').click()
-    #     select = Select(driver.find_element_by_id('signStatusBox'))
-    #     select.select_by_visible_text('Sign and Close')
-    #     select = Select(driver.find_element_by_id('requesteeIdBox'))
-    #     select.select_by_visible_text('Jane Biologist')
-    #     driver.find_element_by_xpath("//button[contains(@onclick = \'clickSign();\')]").click()
+    # add note
+    @allure.testcase('addnote')
+    def test2(self):
+        driver = testjoelogin()
+        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235143')
+        driver.find_element_by_id('addNoteButton').click()
+        text = driver.find_element_by_id('cke_250_contents')
+        driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
+        button = driver.find_element_by_css_selector('#note_p_1664 > div.attachmentTableButtons > a:nth-child(1)')
+        button.submit()
+        assert driver.find_element_by_class_name('yui3-skin-sam').is_displayed()
+        driver.close()
 
     # upload
     @allure.testcase('uploadreaction')
@@ -82,6 +54,8 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver = testjoelogin()
         driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235248')
         driver.find_element_by_id('addFile_tab').click()
+        text = driver.find_element_by_id('cke_2_contents')
+        driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
         fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
             'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
@@ -92,9 +66,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         time.sleep(2)
         driver.find_element_by_class_name('resumableUploadButton').click()
         driver.find_element_by_id('attachmentTable_tab').click()
-        assert driver.find_element_by_id('file_533152_tr').is_displayed
-        # PDF only show up after save
-        driver.find_element_by_id('showPDFLink').click()
+        assert driver.find_element_by_class_name('icons').is_displayed
 
         driver.close()
 
@@ -108,7 +80,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         select = Select(driver.find_element_by_id('requesteeIdBox'))
         select.select_by_visible_text('Jane Biologist')
         driver.find_element_by_xpath("//button[contains(@onclick = 'clickSign();')]").click()
-        self.assertIn('1/14/2019 09:36:41 PM', driver.find_element_by_id('hd_9_235143').text)
+        assert driver.find_element_by_id('historyNavLink').is_displayed()
 
         # logout
         driver.find_element_by_link_text('Logout').click()

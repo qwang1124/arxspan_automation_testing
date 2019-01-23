@@ -12,7 +12,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
     @allure.testcase('createconceptexperiment')
     def test1(self):
         driver = testjanelogin()
-        driver.get('https://model.arxspan.com/arxlab/show-notebook.asp?id=10799')
+        driver.get('https://model.arxspan.com/arxlab/show-notebook.asp?id=10800')
         driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(4)').click()
         driver.find_element_by_id('e_details').send_keys('TESTING')
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')

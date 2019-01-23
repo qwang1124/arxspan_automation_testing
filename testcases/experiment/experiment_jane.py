@@ -19,8 +19,19 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.find_element_by_id('e_details').send_keys('TESTING')
         self.assertIn('TESTING', driver.find_element_by_id('e_details').text)
 
-    @allure.testcase('addprotocolfile')
+    @allure.testcase('addprotocolnote')
     def test2(self):
+        driver = testjanelogin()
+        driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
+        text = driver.find_element_by_id('cke_17_contents')
+        driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
+        button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
+        button.send_keys(Keys.ENTER)
+        assert driver.find_element_by_id('historyNavLink').is_displayed()
+        driver.close()
+
+    @allure.testcase('addprotocolfile')
+    def test3(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -44,7 +55,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.close()
 
     @allure.testcase('addhistologyfile')
-    def test3(self):
+    def test4(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -65,7 +76,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.close()
 
     @allure.testcase('addhistologyanalysis')
-    def test4(self):
+    def test5(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -86,7 +97,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.close()
 
     @allure.testcase('addXenograft')
-    def test5(self):
+    def test6(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_id('addFile_tab').click()
@@ -123,7 +134,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.close()
 
     @allure.testcase('signandwitness')
-    def test6(self):
+    def test7(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
         driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
