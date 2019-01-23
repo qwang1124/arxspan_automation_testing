@@ -13,35 +13,36 @@ class TestCreateexperimentJoe(unittest.TestCase):
     def test6(self):
         driver = testjanelogin()
         driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
-        driver.find_element_by_id('addFile_tab').click()
-        fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
-        driver.execute_script(
-            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
-            fileinput)
-        path = Path('resources\\~$Xenograft.xls').absolute()
-        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
-            .send_keys(str(path))
-        time.sleep(2)
-        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
-                                                     'section.bottomButtons.buttonAlignedRight > button')
-        button.click()
-        # check attachment is successful and displayed
-        driver.find_element_by_id('attachmentTable_tab').click()
-        assert driver.find_element_by_class_name('icons').is_displayed
-        driver.find_element_by_css_selector('#submitRow > a:nth-child(1)').click()
+        # driver.find_element_by_id('addFile_tab').click()
+        # fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
+        # driver.execute_script(
+        #     'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
+        #     fileinput)
+        # path = Path('resources\\~$Xenograft.xls').absolute()
+        # driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
+        #     .send_keys(str(path))
+        # time.sleep(2)
+        # button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
+        #                                              'section.bottomButtons.buttonAlignedRight > button')
+        # button.click()
+        # # check attachment is successful and displayed
+        # driver.find_element_by_id('attachmentTable_tab').click()
+        # assert driver.find_element_by_class_name('icons').is_displayed
+        # button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
+        # button.send_keys(Keys.ENTER)
         # download the file
-        driver.find_element_by_css_selector('#file_p_15668_tr > td.uploadButtons > a:nth-child(2)').click()
+        driver.find_element_by_id('attachmentTable_tab').click()
+
+        driver.find_element_by_xpath('//*[@id="file_90183_tr"]/td[4]/a[3]').click()
+
         # Make an edit to the file and save it locally and upload again
-        driver.find_element_by_class_name('littleButton noLiveEdit').click()
-        fileinput = driver.find_element_by_id('file1_90169')
-        driver.execute_script(
-            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
-            fileinput)
-        path = Path('resources\\~$Xenograft.xls').absolute()
-        driver.find_element_by_id('file1_90169').send_keys(str(path))
-        button = driver.find_element_by_css_selector('#addFileDiv_90169 > form > '
-                                                     'section.bottomButtons.buttonAlignedRight > button')
-        button.click()
+        driver.find_element_by_xpath('//*[@id="file_90183_tr"]/td[4]/a[2]').click()
+        field = driver.find_element_by_id('file1_90184')
+        driver.execute_script("arguments[0].style.display = 'block';", field)
+        path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
+        driver.find_element_by_id('file1_90184').send_keys(str(path))
+        button = driver.find_element_by_xpath('//*[@id="addFileDiv_90183"]/form/section[2]/button')
+        button.submit()
         assert driver.find_element_by_class_name('icons').is_displayed
         driver.close()
 
