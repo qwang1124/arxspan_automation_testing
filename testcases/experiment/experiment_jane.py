@@ -114,23 +114,23 @@ class TestCreateexperimentJane(unittest.TestCase):
         button.click()
         # check attachment is successful and displayed
         driver.find_element_by_id('attachmentTable_tab').click()
-        assert driver.find_element_by_id('file_533152_tr').is_displayed
+        assert driver.find_element_by_class_name('icons').is_displayed
+        button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
+        button.send_keys(Keys.ENTER)
         # download the file
-        driver.find_element_by_class_name('littleButton').click()
+        driver.find_element_by_id('attachmentTable_tab').click()
+
+        driver.find_element_by_xpath('//*[@id="file_90183_tr"]/td[4]/a[3]').click()
+
         # Make an edit to the file and save it locally and upload again
-        driver.find_element_by_id('addFile_tab').click()
-        fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
-        driver.execute_script(
-            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
-            fileinput)
-        path = Path('resources\\~$Xenograft.xls').absolute()
-        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
-            .send_keys(str(path))
-        time.sleep(2)
-        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
-                                                     'section.bottomButtons.buttonAlignedRight > button')
-        button.click()
-        assert driver.find_element_by_id('file_533152_tr').is_displayed
+        driver.find_element_by_xpath('//*[@id="file_90183_tr"]/td[4]/a[2]').click()
+        field = driver.find_element_by_id('file1_90183')
+        driver.execute_script("arguments[0].style.display = 'block';", field)
+        path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
+        driver.find_element_by_id('file1_90183').send_keys(str(path))
+        button = driver.find_element_by_xpath('//*[@id="addFileDiv_90183"]/form/section[2]/button')
+        button.submit()
+        assert driver.find_element_by_class_name('icons').is_displayed
         driver.close()
 
     @allure.testcase('signandwitness')
@@ -144,7 +144,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         select = Select(driver.find_element_by_id('requesteeIdBox'))
         select.select_by_visible_text('Jane Biologist')
         driver.find_element_by_xpath("//button[contains(@onclick = \'clickSign();\')]").click()
-        # self.assertIn('1/14/2019 09:36:41 PM', driver.find_element_by_id('hd_9_235143').text)
+        assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_id('makePDFLink').click()
 
         # logout
