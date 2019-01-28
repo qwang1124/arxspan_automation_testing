@@ -1,7 +1,5 @@
 import time
 import unittest
-
-
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
@@ -9,11 +7,13 @@ from webdriver_manager.chrome import ChromeDriverManager
 import allure
 
 
-class TestWitnessJane(unittest.TestCase):
+class TestWitnessJoe(unittest.TestCase):
 
     @allure.testcase('witnessjoe')
     def test1(self):
         driver = testjoelogin()
+        time.sleep(1)
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         driver.find_element_by_xpath('//*[@id="witnessRequestsHolder"]/div/div[2]/table/tbody/tr[1]/td[2]/a').click()
         button = driver.find_element_by_css_selector('#witnessButtons > a:nth-child(1)')
         button.click()
@@ -70,4 +70,3 @@ def testjoelogin():
     select.select_by_visible_text('Model Test Script Company')
     driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
     return driver
-
