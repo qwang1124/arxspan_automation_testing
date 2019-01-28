@@ -18,7 +18,49 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
         # self.assertIn('TESTING', driver.find_element_by_id('e_details').text)
+
+    def test2(self):
+        driver = testjanelogin()
+        driver.get('https://model.arxspan.com/arxlab/free-experiment.asp?id=2375')
+        driver.find_elements_by_id('addFileButton').click()
+        fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
+        driver.execute_script(
+            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
+            fileinput)
+        path = Path('resources\\nmrketalreduction21H.txt').absolute()
+        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
+            .send_keys(str(path))
+        time.sleep(2)
+        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
+                                                     'section.bottomButtons.buttonAlignedRight > button')
+        button.click()
         assert driver.find_element_by_id('historyNavLink').is_displayed()
+        driver.find_element_by_id('attachmentTable_tab').click()
+        assert driver.find_element_by_id('file_533152_tr').is_displayed
+        button = driver.find_elements_by_css_selector('#submitRow > a:nth-child(1)')
+        button.send_keys(Keys.ENTER)
+        driver.close()
+
+    def test3(self):
+        driver = testjanelogin()
+        driver.get('https://model.arxspan.com/arxlab/free-experiment.asp?id=2375')
+        driver.find_elements_by_id('addFileButton').click()
+        fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
+        driver.execute_script(
+            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
+            fileinput)
+        path = Path('resources\\GeneralFACSprotocol.doc').absolute()
+        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
+            .send_keys(str(path))
+        time.sleep(2)
+        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
+                                                     'section.bottomButtons.buttonAlignedRight > button')
+        button.click()
+        assert driver.find_element_by_id('historyNavLink').is_displayed()
+        driver.find_element_by_id('attachmentTable_tab').click()
+        assert driver.find_element_by_id('file_533152_tr').is_displayed
+        button = driver.find_elements_by_css_selector('#submitRow > a:nth-child(1)')
+        button.send_keys(Keys.ENTER)
         driver.close()
 
 
