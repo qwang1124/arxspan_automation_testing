@@ -18,6 +18,8 @@ class TestWitnessJane(unittest.TestCase):
         button.click()
         driver.find_element_by_id('reasonBox').send_keys('TESTING')
         driver.find_element_by_id('rejectSubmitButton').click()
+        time.sleep(1)
+        assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_link_text('Logout').click()
         driver.close()
 

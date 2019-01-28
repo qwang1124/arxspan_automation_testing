@@ -66,7 +66,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         time.sleep(2)
         driver.find_element_by_class_name('resumableUploadButton').click()
         driver.find_element_by_id('attachmentTable_tab').click()
-        assert driver.find_element_by_class_name('icons').is_displayed
+        assert driver.find_element_by_id('attachmentTable').is_displayed
 
         driver.close()
 

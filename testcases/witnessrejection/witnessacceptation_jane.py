@@ -23,6 +23,8 @@ class TestWitnessJane(unittest.TestCase):
         form = driver.find_element_by_id('witnessForm')
         form.click()
         driver.find_element_by_id('witnessSubmitButton').click()
+        time.sleep(1)
+        assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_link_text('Logout').click()
         driver.close()
 
