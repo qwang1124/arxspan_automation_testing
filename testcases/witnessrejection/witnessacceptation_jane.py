@@ -24,6 +24,7 @@ class TestWitnessJane(unittest.TestCase):
         form.click()
         driver.find_element_by_id('witnessSubmitButton').click()
         time.sleep(1)
+        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235309')
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_link_text('Logout').click()
         driver.close()

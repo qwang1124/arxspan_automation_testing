@@ -26,7 +26,7 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
     @allure.testcase('analyticalexpernimentaddfile')
     def test2(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=945')
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
         driver.find_element_by_id('addFileButton').click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
@@ -53,7 +53,7 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
     @allure.testcase('analyticalexpernimentaddfile2')
     def test3(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=945')
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
         driver.find_element_by_id('addFileButton').click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
@@ -76,7 +76,7 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
     @allure.testcase('analyticalexpernimentaddfile3')
     def test4(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=945')
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
         driver.find_element_by_id('addFileButton').click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
@@ -89,6 +89,7 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
+        time.sleep(1)
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_id('attachmentTable_tab').click()
         assert driver.find_element_by_id('attachmentTable').is_displayed
@@ -99,7 +100,7 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
     @allure.testcase('analyticalexpernimentaddfile4')
     def test4(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=945')
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
         driver.find_element_by_id('addFileButton').click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
@@ -112,6 +113,7 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
+        time.sleep(1)
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_id('attachmentTable_tab').click()
         assert driver.find_element_by_id('attachmentTable').is_displayed
@@ -120,23 +122,24 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
         # download the file
         driver.find_element_by_id('attachmentTable_tab').click()
 
-        driver.find_element_by_xpath('//*[@id="file_p_1642_tr"]/td[4]/a[2]').click()
+        driver.find_element_by_xpath('//*[@id="file_2497_tr"]/td[4]/a[3]').click()
 
         # Make an edit to the file and save it locally and upload again
-        driver.find_element_by_xpath('//*[@id="file_2493_tr"]/td[4]/a[2]').click()
-        field = driver.find_element_by_id('file1_2493')
+        driver.find_element_by_xpath('//*[@id="file_2497_tr"]/td[4]/a[2]').click()
+        field = driver.find_element_by_id('file1_2497')
         driver.execute_script("arguments[0].style.display = 'block';", field)
         path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
-        driver.find_element_by_id('file1_2493').send_keys(str(path))
-        button = driver.find_element_by_xpath('//*[@id="addFileDiv_2493"]/form/section[2]/button')
+        driver.find_element_by_id('file1_2497').send_keys(str(path))
+        button = driver.find_element_by_xpath('//*[@id="addFileDiv_2497"]/form/section[2]/button')
         button.submit()
+        time.sleep(1)
         assert driver.find_element_by_id('attachmentTable').is_displayed
         driver.close()
 
     @allure.testcase('analyticalexpernimentwitness')
     def test5(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=945')
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
         time.sleep(1)
@@ -152,6 +155,7 @@ class TestanalyticalexpernimentJane(unittest.TestCase):
         select.select_by_visible_text('Jane Biologist')
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
         time.sleep(1)
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_link_text('Logout').click()
         driver.close()
