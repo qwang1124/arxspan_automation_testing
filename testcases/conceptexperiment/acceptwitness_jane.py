@@ -24,6 +24,7 @@ class TestWitnessJane(unittest.TestCase):
         form.click()
         driver.find_element_by_id('witnessSubmitButton').click()
         time.sleep(1)
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_link_text('Logout').click()
         driver.close()
@@ -40,3 +41,4 @@ def testjanelogin():
     select.select_by_visible_text('Model Test Script Company')
     driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
     return driver
+
