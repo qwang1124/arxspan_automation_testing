@@ -9,19 +9,19 @@ import allure
 
 class TestWitnessJoe(unittest.TestCase):
 
-    # @allure.testcase('witnessrejectionjoe')
-    # def test1(self):
-    #     driver = testjoelogin()
-    #     driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
-    #     driver.find_element_by_id('noteTable_tab').click()
-    #     driver.find_element_by_css_selector('#note_399_tr > td:nth-child(1) > a').click()
-    #     self.assertIn('TESTING', driver.find_element_by_css_selector('#note_399_td').text)
-    #     driver.find_element_by_id('addNoteButton').click()
-    #     text = driver.find_element_by_id('cke_300_contents')
-    #     driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
-    #     button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
-    #     button.send_keys(Keys.ENTER)
-    #     driver.close()
+    @allure.testcase('witnessrejectionjoe')
+    def test1(self):
+        driver = testjoelogin()
+        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
+        driver.find_element_by_id('noteTable_tab').click()
+        driver.find_element_by_css_selector('#note_399_tr > td:nth-child(1) > a').click()
+        self.assertIn('TESTING', driver.find_element_by_css_selector('#note_399_td').text)
+        driver.find_element_by_id('addNoteButton').click()
+        text = driver.find_element_by_id('cke_300_contents')
+        driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
+        button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
+        button.send_keys(Keys.ENTER)
+        driver.close()
 
     @allure.testcase('sendwitnessrequestjoe')
     def test2(self):

@@ -68,7 +68,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
             driver.get_screenshot_as_file(picture_name)
         self.assertTrue(valid)
 
-    @allure.testcase('test share notebook to Joe Chemistry')
+    @allure.testcase('test share notebook to Jane Biologist')
     def testsharenotebookjane(self):
         driver = testadminlogin()
         driver.get('https://model.arxspan.com//arxlab//show-notebook.asp?id=10733')
