@@ -11,9 +11,13 @@ class TestNotebookJoe(unittest.TestCase):
     def test1(self):
         driver = joelogin()
         driver.find_element_by_link_text('Invitations').click()
-        driver.get('https://model.arxspan.com//arxlab//show-project.asp?id=2575')
-        time.sleep(3)
-        assert(driver.find_element_by_xpath("//input[@type='button' and @value='Accept']").is_displayed())
+        driver.find_element_by_css_selector('#SummaryTable > tbody > tr > td.sorting_1 > a').click()
+        time.sleep(2)
+        driver.switch_to_window(driver.window_handles[1])
+
+        # assert driver.find_element_by_xpath('//*[@id="acceptForm"]/input[3]').is_displayed()
+        driver.find_element_by_css_selector('#acceptForm > input:nth-child(3)').click()
+        driver.close()
 
 
 def joelogin():
@@ -24,7 +28,7 @@ def joelogin():
     driver.find_element_by_id('login-pass').send_keys('carbonCopee')
     driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
     select = Select(driver.find_element_by_tag_name('select'))
-    select.select_by_visible_text('Demo')
+    select.select_by_visible_text('Model Test Script Company')
     driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
     return driver
 

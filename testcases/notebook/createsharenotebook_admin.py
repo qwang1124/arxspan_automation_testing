@@ -35,73 +35,52 @@ class TestCreatenotebookAdmin(unittest.TestCase):
             picture_name = 'testcreateNotebookAdmin_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
             driver.get_screenshot_as_file(picture_name)
         self.assertTrue(valid)
+        driver.close()
 
     @allure.testcase('test share notebook to Joe')
     def testsharenotebookjoe(self):
         driver = testadminlogin()
-        driver.get('https://model.arxspan.com//arxlab//show-notebook.asp?id=10733')
-
-        # Share notebook with Joe Chemistry
+        driver.find_element_by_id('navMyNotebooksLink').click()
+        driver.find_element_by_css_selector('#navMyNotebooks > ul > li:nth-child(1) > a').click()
+        # Share notebook with Joe
         driver.find_element_by_id('shareNotebookLink').click()
         driver.find_element_by_class_name('groupSelectLink').click()
-        driver.find_element_by_id('expandGroupLink-105').click()
-        driver.find_element_by_id('listGroupCheckUser-936').click()
-        driver.find_element_by_xpath('//input[@type="button" and @value="Select"]').click()
+        driver.find_element_by_id('listGroupCheckUser-1786').click()
+        driver.find_element_by_xpath('//*[@id="groupsDiv"]/div[3]/input').click()
+
         driver.find_element_by_id('canRead').click()
         driver.find_element_by_id('canWrite').click()
-        driver.find_element_by_xpath("//input[@type='button' and @value='Share']").click()
+        driver.find_element_by_xpath('//*[@id="shareForm"]/input[8]').click()
+        time.sleep(1)
 
-        test_value = driver.find_element_by_class_name('userName').text
-        print(test_value)
-        a = 'Joe Chemist'
-        test_value2 = driver.find_element_by_class_name('userTitle').text
-        b = 'System Administrator'
-        test_value3 = driver.find_element_by_id('newPermissions').text
-        print(test_value2)
-        c = 'View/Write'
-
-        if a in test_value and b in test_value2 and c in test_value3:
-            valid = True
-        else:
-            valid = False
-            picture_name = 'testsharenotebookjoe_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
-            driver.get_screenshot_as_file(picture_name)
-        self.assertTrue(valid)
+        assert driver.find_element_by_class_name('userName').is_displayed()
+        assert driver.find_element_by_class_name('userTitle').is_displayed()
+        assert driver.find_elements_by_id('newPermissions')[0].is_displayed()
+        driver.close()
 
     @allure.testcase('test share notebook to Jane Biologist')
     def testsharenotebookjane(self):
         driver = testadminlogin()
-        driver.get('https://model.arxspan.com//arxlab//show-notebook.asp?id=10733')
+        driver.find_element_by_id('navMyNotebooksLink').click()
+        driver.find_element_by_css_selector('#navMyNotebooks > ul > li:nth-child(1) > a').click()
 
         # Share notebook with Jane Biologist
         driver.find_element_by_id('shareNotebookLink').click()
         driver.find_element_by_class_name('groupSelectLink').click()
-        driver.find_element_by_id('expandGroupLink-105').click()
-        driver.find_element_by_id('listGroupCheckUser-937').click()
-        driver.find_element_by_xpath("//input[@type='button' and @value='Select']").click()
+        driver.find_element_by_id('listGroupCheckUser-1787').click()
+        driver.find_element_by_xpath('//*[@id="groupsDiv"]/div[3]/input').click()
+
         driver.find_element_by_id('canRead').click()
         driver.find_element_by_id('canWrite').click()
-        driver.find_element_by_xpath("//input[@type='button' and @value='Share']").click()
-
-        test_value = driver.find_element_by_class_name('userName').text
-        print(test_value)
-        a = 'Jane Biologist'
-        test_value2 = driver.find_element_by_class_name('userTitle').text
-        b = 'System Administrator'
-        test_value3 = driver.find_element_by_id('newPermissions').text
-        print(test_value2)
-        c = 'View/Write'
-
-        if a in test_value and b in test_value2 and c in test_value3:
-            valid = True
-        else:
-            valid = False
-            picture_name = 'testsharenotebookjane_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
-            driver.get_screenshot_as_file(picture_name)
-        self.assertTrue(valid)
+        driver.find_element_by_xpath('//*[@id="shareForm"]/input[8]').click()
+        time.sleep(1)
+        assert driver.find_elements_by_class_name('userName')[1].is_displayed()
+        assert driver.find_element_by_class_name('userTitle').is_displayed()
+        assert driver.find_elements_by_id('newPermissions')[0].is_displayed()
 
         # Logout
         driver.find_element_by_link_text('Logout').click()
+        driver.close()
 
 
 def testadminlogin():
@@ -112,8 +91,6 @@ def testadminlogin():
     driver.find_element_by_id('login-pass').send_keys('carbonCopee')
     driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
     select = Select(driver.find_element_by_tag_name('select'))
-    select.select_by_visible_text('Demo')
+    select.select_by_visible_text('Model Test Script Company')
     driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
     return driver
-
-
