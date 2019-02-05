@@ -20,21 +20,24 @@ class TestCreateexperimentJoe(unittest.TestCase):
         create = driver.find_element_by_css_selector('#newExperimentDiv > form > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         create.send_keys(Keys.ENTER)
-        # self.assertIn('Test_Notebook_QingWang - 004', driver.find_element_by_id('e_name').text)
+        assert driver.find_element_by_id('historyNavLink').is_displayed()
+
         driver.close()
 
     # add note
     @allure.testcase('addnote')
     def test2(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235364')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         driver.find_element_by_id('addNoteButton').click()
         time.sleep(1)
         text = driver.find_element_by_id('cke_250_contents')
-        driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
-        button = driver.find_element_by_css_selector('#note_p_1693 > div.attachmentTableButtons > a:nth-child(1)')
-        button.submit()
-        time.sleep(2)
+        driver.execute_script("arguments[0].innerHTML='<p>this is test</p>'", text)
+        time.sleep(1)
+        save = driver.find_element_by_xpath('//*[contains(@id, "note_p")]/div[4]/a[1]')
+        save.send_keys(Keys.ENTER)
+        time.sleep(3)
         # assert driver.find_element_by_class_name('yui3-skin-sam').is_displayed()
         driver.close()
 
@@ -42,7 +45,8 @@ class TestCreateexperimentJoe(unittest.TestCase):
     @allure.testcase('uploadreaction')
     def test3(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235364')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         driver.find_element_by_id('e_details').send_keys('test')
         driver.find_element_by_id('uploadReaction').click()
         path = Path('resources//06 epoxide opening.cdx').absolute()
@@ -56,7 +60,8 @@ class TestCreateexperimentJoe(unittest.TestCase):
     @allure.testcase('addfile')
     def test4(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235364')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         driver.find_element_by_id('addFile_tab').click()
         text = driver.find_element_by_id('cke_2_contents')
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
@@ -75,31 +80,60 @@ class TestCreateexperimentJoe(unittest.TestCase):
         time.sleep(1)
         driver.close()
 
-    @allure.testcase('signandwitness')
+    @allure.testcase('signandkeepopen')
     def test5(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235364')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         save = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         save.send_keys(Keys.ENTER)
         time.sleep(2)
         # assert driver.find_element_by_id('historyNavLink').is_displayed()
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235364')
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         driver.find_element_by_id('signExperimentButton').click()
         email = driver.find_elements_by_id('signEmail')[0]
         email.send_keys('joe@demo.com')
         password = driver.find_elements_by_id('password')[0]
         password.send_keys('carbonCopee')
+        select = Select(driver.find_element_by_id('signStatusBox'))
+        select.select_by_visible_text('Sign and Keep Open')
         checkbox = driver.find_element_by_css_selector('#signDiv > form > section.bottomDisclaimer > div > label')
         checkbox.click()
         time.sleep(4)
-        select = Select(driver.find_element_by_id('requesteeIdBox'))
-        select.select_by_visible_text('Jane Biologist')
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
         time.sleep(2)
         # assert driver.find_element_by_id('historyNavLink').is_displayed()
+        driver.close()
+
+    @allure.testcase('signandwitness')
+    def test6(self):
+        driver = testjoelogin()
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
+        driver.find_element_by_id('addNoteButton').click()
+        time.sleep(1)
+        text = driver.find_element_by_id('cke_250_contents')
+        driver.execute_script("arguments[0].innerHTML='<p>this is test</p>'", text)
+        time.sleep(1)
+        save = driver.find_element_by_xpath('//*[contains(@id, "note_p")]/div[4]/a[1]')
+        save.send_keys(Keys.ENTER)
+        time.sleep(4)
+        driver.find_element_by_id('signExperimentButton').click()
+        email = driver.find_elements_by_id('signEmail')[0]
+        email.send_keys('joe@demo.com')
+        password = driver.find_elements_by_id('password')[0]
+        password.send_keys('carbonCopee')
+        select = Select(driver.find_element_by_id('requesteeIdBox'))
+        select.select_by_visible_text('Jane Biologist')
+        checkbox = driver.find_element_by_css_selector('#signDiv > form > section.bottomDisclaimer > div > label')
+        checkbox.click()
+        time.sleep(4)
+        driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
 
         # logout
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235364')
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         driver.find_element_by_link_text('Logout').click()
         time.sleep(1)
         driver.close()
@@ -116,4 +150,3 @@ def testjoelogin():
     select.select_by_visible_text('Model Test Script Company')
     driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
     return driver
-
