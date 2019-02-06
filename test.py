@@ -35,18 +35,20 @@ class TestCreateexperimentJane(unittest.TestCase):
         # button.send_keys(Keys.ENTER)
         # # download the file
         # time.sleep(2)
-        driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
-        driver.find_element_by_id('attachmentTable_tab').click()
-
-        driver.find_elements_by_xpath('//td[4]/a[3]')[0].click()
+        driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=32659')
+        # driver.find_element_by_id('attachmentTable_tab').click()
+        #
+        # driver.find_elements_by_xpath('//td[4]/a[3]')[0].click()
 
         # Make an edit to the file and save it locally and upload again
-        driver.find_elements_by_xpath('//td[4]/a[2]')[0].click()
-        field = driver.find_elements_by_xpath("//input[contains(@id, 'file1_9')]")[0]
+        driver.find_element_by_id('attachmentTable_tab').click()
+        driver.find_elements_by_xpath('//*[contains(@id, "file_9")]/td[4]/a[2]')[0].click()
+        field = driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0]
         driver.execute_script("arguments[0].style.display = 'block';", field)
         path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
-        driver.find_element_by_id('file1_90186').send_keys(str(path))
-        button = driver.find_element_by_xpath('//*[@id="addFileDiv_90186"]/form/section[2]/button')
+        driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0].send_keys(str(path))
+        time.sleep(4)
+        button = driver.find_element_by_xpath('//*[[contains(@id, "addFileDiv_9")]/form/section[2]/button')
         button.submit()
         time.sleep(1)
         assert driver.find_element_by_class_name('icons').is_displayed
