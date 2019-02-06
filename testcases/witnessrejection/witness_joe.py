@@ -30,19 +30,16 @@ class TestWitnessJane(unittest.TestCase):
     @allure.testcase('witnessrejectionjoe')
     def test1(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235309')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         driver.find_element_by_id('noteTable_tab').click()
-        driver.find_element_by_css_selector('#note_68272_tr > td:nth-child(1) > a').click()
+        driver.find_element_by_link_text('Witness Request Rejection').click()
         self.assertIn('TESTING', driver.find_element_by_css_selector('#note_68272 > p:nth-child(5)').text)
         driver.find_element_by_id('addNoteButton').click()
         text = driver.find_element_by_id('cke_250_contents')
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
-
-    def test3(self):
-        driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235309')
         time.sleep(1)
         driver.find_element_by_id('signExperimentButton').click()
         time.sleep(1)

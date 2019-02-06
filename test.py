@@ -41,6 +41,11 @@ class TestCreateexperimentJane(unittest.TestCase):
         # driver.find_elements_by_xpath('//td[4]/a[3]')[0].click()
 
         # Make an edit to the file and save it locally and upload again
+        content = u'这是一段自动输入的测试内容'
+        js = "document.getElementByClassName('cke_wysiwyg_frame cke_reset').contentWindow. " \
+             "document.getElementsByTagName('body')[0].innerHTML = ' % s'" % content
+        driver.execute_script(js)
+
         driver.find_element_by_id('attachmentTable_tab').click()
         driver.find_elements_by_xpath('//*[contains(@id, "file_9")]/td[4]/a[2]')[0].click()
         field = driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0]

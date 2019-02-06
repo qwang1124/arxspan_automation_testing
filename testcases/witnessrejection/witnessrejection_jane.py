@@ -18,8 +18,10 @@ class TestWitnessJane(unittest.TestCase):
         button.click()
         driver.find_element_by_id('reasonBox').send_keys('TESTING')
         driver.find_element_by_id('rejectSubmitButton').click()
-        time.sleep(1)
-        driver.get('https://model.arxspan.com/arxlab/experiment_no_chemdraw.asp?id=235309')
+        time.sleep(4)
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_link_text('Logout').click()
         driver.close()

@@ -163,7 +163,8 @@ class TestCreateexperimentJane(unittest.TestCase):
     # @allure.testcase('signandwitness')
     # def test7(self):
     #     driver = testjanelogin()
-    #     driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=31893')
+    #     driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+    #                                      '1]/td[2]/a').click()
     #     driver.find_element_by_xpath("//a[contains(@onclick = 'clickSave();')]").click()
     #     driver.find_element_by_id('signExperimentButton').click()
     #     select = Select(driver.find_element_by_id('signStatusBox'))
