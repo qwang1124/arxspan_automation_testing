@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5e3e4a7-4260-43f6-9584-050f58404d02" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing" beforeDir="false" afterPath="$PROJECT_DIR$/arxspan_automation_testing" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxspan_automation_testing/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/experiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/experiment_jane.py" afterDir="false" />
@@ -344,7 +343,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="672" y="119" width="1116" height="914" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24953617" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
