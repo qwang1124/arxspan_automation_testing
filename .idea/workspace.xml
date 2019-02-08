@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f5e3e4a7-4260-43f6-9584-050f58404d02" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/experiment_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arxspan_automation_testing" beforeDir="false" afterPath="$PROJECT_DIR$/arxspan_automation_testing" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/experiment_joe.sh" beforeDir="false" afterPath="$PROJECT_DIR$/arxspan_automation_testing/experiment_joe.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxspan_automation_testing/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/testcases/conceptexperiment/acceptwitness_jane.py" beforeDir="false" />
@@ -31,16 +32,6 @@
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/createsharenotebook_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/arxspan_automation_testing/testcases/Admin/createsharenotebook_admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/notebook_shareaccept_jane.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/notebook_shareaccept_joe.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment_joe.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiment_joe.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/acceptwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/acceptwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalexperiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalexperiment_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalwitness_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/rejectwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/rejectwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/notebook/createsharenotebook_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/createsharenotebook_admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_joe.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,11 +62,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalexperiment_joe.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="362">
-              <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+            <state relative-caret-position="316">
+              <caret line="157" column="16" selection-start-line="156" selection-start-column="8" selection-end-line="158" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalwitness_joe.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -145,6 +148,7 @@
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/experiment_joe.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/conceptexperiment_jane.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalexperiment_joe.py" />
+        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalwitness_joe.py" />
       </list>
     </option>
   </component>
@@ -382,22 +386,22 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="741" y="88" width="1112" height="914" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33240223" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18809272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3290653" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2765685" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2765685" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47631243" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32953104" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3277849" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.27735645" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -466,11 +470,6 @@
           <url>file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalexperiment_joe.py</url>
           <line>107</line>
           <option name="timeStamp" value="214" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalexperiment_joe.py</url>
-          <line>145</line>
-          <option name="timeStamp" value="218" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalexperiment_joe.py</url>
@@ -558,16 +557,6 @@
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/witnessrejection/witnessjane.py" />
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/witnessrejection/witnessjoe.py" />
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/conceptexperiment/analyticalexperniment_joe.py" />
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalwitness_joe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="14" column="76" selection-start-line="14" selection-start-column="76" selection-end-line="14" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/rejectwitness_jane.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -713,20 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/witnessrejection_jane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/witnessacceptation_jane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/rejectanalyticalwitness_jane.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -777,8 +752,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalexperiment_joe.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="180" column="22" lean-forward="true" selection-start-line="180" selection-start-column="22" selection-end-line="180" selection-end-column="22" />
+        <state relative-caret-position="316">
+          <caret line="157" column="16" selection-start-line="156" selection-start-column="8" selection-end-line="158" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/witnessrejection_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="12" column="20" lean-forward="true" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/witnessacceptation_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="19" column="40" lean-forward="true" selection-start-line="19" selection-start-column="40" selection-end-line="19" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalwitness_joe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
