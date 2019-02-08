@@ -35,7 +35,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         # button.send_keys(Keys.ENTER)
         # # download the file
         # time.sleep(2)
-        driver.get('https://model.arxspan.com/arxlab/bio-experiment.asp?id=32659')
+        driver.get('https://model.arxspan.com/arxlab/bio-JaneBiologist.asp?id=32659')
         # driver.find_element_by_id('attachmentTable_tab').click()
         #
         # driver.find_elements_by_xpath('//td[4]/a[3]')[0].click()

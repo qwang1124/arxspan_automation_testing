@@ -12,7 +12,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
     @allure.testcase('createconceptexperiment')
     def test1(self):
         driver = testjanelogin()
-        driver.get('https://model.arxspan.com/arxlab/show-notebook.asp?id=10800')
+        driver.get('https://model.arxspan.com/arxlab/show-Admin.asp?id=10800')
         driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(4)').click()
         driver.find_element_by_id('e_details').send_keys('TESTING')
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
@@ -22,7 +22,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
     @allure.testcase('conceptexperimentaddfile')
     def test2(self):
         driver = testjanelogin()
-        driver.get('https://model.arxspan.com/arxlab/free-experiment.asp?id=2375')
+        driver.get('https://model.arxspan.com/arxlab/free-JaneBiologist.asp?id=2375')
         time.sleep(1)
         driver.find_element_by_id('addFileButton').click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
@@ -46,7 +46,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
     @allure.testcase('conceptexperimentaddfile2')
     def test3(self):
         driver = testjanelogin()
-        driver.get('https://model.arxspan.com/arxlab/free-experiment.asp?id=2375')
+        driver.get('https://model.arxspan.com/arxlab/free-JaneBiologist.asp?id=2375')
         driver.find_element_by_id('addFileButton').click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
@@ -71,7 +71,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
     @allure.testcase('conceptexperimentaddnote')
     def test4(self):
         driver = testjanelogin()
-        driver.get('https://model.arxspan.com/arxlab/free-experiment.asp?id=2375')
+        driver.get('https://model.arxspan.com/arxlab/free-JaneBiologist.asp?id=2375')
         text = driver.find_element_by_id('cke_17_contents')
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')

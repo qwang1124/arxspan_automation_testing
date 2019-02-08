@@ -12,7 +12,7 @@ class TestWitnessJoe(unittest.TestCase):
     @allure.testcase('witnessrejectionjoe')
     def test1(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
+        driver.get('https://model.arxspan.com/arxlab/anal-JaneBiologist.asp?id=946')
         driver.find_element_by_id('noteTable_tab').click()
         driver.find_element_by_css_selector('#note_399_tr > td:nth-child(1) > a').click()
         self.assertIn('TESTING', driver.find_element_by_css_selector('#note_399_td').text)
@@ -26,7 +26,7 @@ class TestWitnessJoe(unittest.TestCase):
     @allure.testcase('sendwitnessrequestjoe')
     def test2(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
+        driver.get('https://model.arxspan.com/arxlab/anal-JaneBiologist.asp?id=946')
         time.sleep(1)
         driver.find_element_by_id('signExperimentButton').click()
         time.sleep(1)

@@ -7,7 +7,7 @@ import allure
 
 
 class TestNotebookJoe(unittest.TestCase):
-    @allure.testcase('test share notebook acceptation')
+    @allure.testcase('test share Admin acceptation')
     def test1(self):
         driver = joelogin()
         driver.find_element_by_link_text('Invitations').click()

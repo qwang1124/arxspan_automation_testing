@@ -9,11 +9,11 @@ from selenium.webdriver.support.ui import Select
 
 class TestCreatenotebookAdmin(unittest.TestCase):
 
-    @allure.testcase('test create notebook by Admin')
+    @allure.testcase('test create Admin by Admin')
     def testcreatenotebook(self):
         driver = testadminlogin()
 
-        # create notebook by admin
+        # create Admin by admin
         driver.find_element_by_id('createNewNotebookLeftNavButton').click()
         driver.find_element_by_id('notebookName').send_keys('Test_Notebook_Q')
         driver.find_element_by_name('notebookDescription').send_keys('Test Script execution-01/01/2019')
@@ -37,12 +37,12 @@ class TestCreatenotebookAdmin(unittest.TestCase):
         self.assertTrue(valid)
         driver.close()
 
-    @allure.testcase('test share notebook to Joe')
+    @allure.testcase('test share Admin to Joe')
     def testsharenotebookjoe(self):
         driver = testadminlogin()
         driver.find_element_by_id('navMyNotebooksLink').click()
         driver.find_element_by_css_selector('#navMyNotebooks > ul > li:nth-child(1) > a').click()
-        # Share notebook with Joe
+        # Share Admin with Joe
         driver.find_element_by_id('shareNotebookLink').click()
         driver.find_element_by_class_name('groupSelectLink').click()
         driver.find_element_by_id('listGroupCheckUser-1786').click()
@@ -58,13 +58,13 @@ class TestCreatenotebookAdmin(unittest.TestCase):
         assert driver.find_elements_by_id('newPermissions')[0].is_displayed()
         driver.close()
 
-    @allure.testcase('test share notebook to Jane Biologist')
+    @allure.testcase('test share Admin to Jane Biologist')
     def testsharenotebookjane(self):
         driver = testadminlogin()
         driver.find_element_by_id('navMyNotebooksLink').click()
         driver.find_element_by_css_selector('#navMyNotebooks > ul > li:nth-child(1) > a').click()
 
-        # Share notebook with Jane Biologist
+        # Share Admin with Jane Biologist
         driver.find_element_by_id('shareNotebookLink').click()
         driver.find_element_by_class_name('groupSelectLink').click()
         driver.find_element_by_id('listGroupCheckUser-1787').click()
