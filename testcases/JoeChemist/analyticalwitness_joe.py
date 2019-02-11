@@ -1,3 +1,18 @@
+# Test ID: test-01
+# Test name: Joe witnessing rejected analytical experiment and send request to Jane Test
+# Expect output:
+#      1. Witnessing successful;
+#      2. Add new note to the experiment;
+#      3. Send the request to Jane again;
+# Step description:
+#      1. Open the Chrome driver;
+#      2. Login Joe as the user;
+#      3. Choose 'Model Test Script Company' as the company ;
+#      4. Select the analytical experiment and select the notes table;
+#      5. Verify the rejection is showing;
+#      6. Add a new note to the experiment;
+#      7. Sign & Close, selecting Jane Biologist as the Witness;
+#      8. Log out.
 import time
 import unittest
 from selenium import webdriver
@@ -12,22 +27,29 @@ class TestWitnessJoe(unittest.TestCase):
     @allure.testcase('witnessrejectionjoe')
     def test1(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
+        time.sleep(2)
+        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        time.sleep(2)
+        # check the rejection reason is showing
         driver.find_element_by_id('noteTable_tab').click()
-        driver.find_element_by_css_selector('#note_399_tr > td:nth-child(1) > a').click()
-        self.assertIn('TESTING', driver.find_element_by_css_selector('#note_399_td').text)
+        driver.find_element_by_link_text('Witness Request Rejection').click()
+        assert driver.find_element_by_class_name('attachmentsIndexTable').is_displayed()
+        # add new note
         driver.find_element_by_id('addNoteButton').click()
-        text = driver.find_element_by_id('cke_300_contents')
+        text = driver.find_element_by_id('cke_250_contents')
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
+        time.sleep(2)
         driver.close()
 
     @allure.testcase('sendwitnessrequestjoe')
     def test2(self):
         driver = testjoelogin()
-        driver.get('https://model.arxspan.com/arxlab/anal-experiment.asp?id=946')
-        time.sleep(1)
+        time.sleep(2)
+        # Sign & Close, selecting Jane Biologist as the Witness
+        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        time.sleep(2)
         driver.find_element_by_id('signExperimentButton').click()
         time.sleep(1)
         email = driver.find_elements_by_id('signEmail')[0]
@@ -39,7 +61,9 @@ class TestWitnessJoe(unittest.TestCase):
         select = Select(driver.find_element_by_id('requesteeIdBox'))
         select.select_by_visible_text('Jane Biologist')
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
-        time.sleep(1)
+        time.sleep(4)
+        # logout
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         driver.find_element_by_link_text('Logout').click()
         driver.close()
 

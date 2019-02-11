@@ -1,3 +1,15 @@
+# Test ID: test-01
+# Test name: Joe has accept the note book share by Admin Test
+# Expect output:
+#      1. Check received invitation from Admin ;
+#      2. Successful accept the note book share request send by Admin;
+# Step description:
+#      1. Open the Chrome driver;
+#      2. Login Joe as the user;
+#      3. Choose 'Model Test Script Company' as the company ;
+#      4. Click on the invitation;
+#      5. Select the note book name which shared by Admin;
+#      6. Accept the share notification.
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
@@ -7,14 +19,15 @@ import allure
 
 
 class TestNotebookJoe(unittest.TestCase):
-    @allure.testcase('test share notebook acceptation')
+    @allure.testcase('test Admin share acceptation')
     def test1(self):
         driver = joelogin()
         driver.find_element_by_link_text('Invitations').click()
+        time.sleep(2)
         driver.find_element_by_css_selector('#SummaryTable > tbody > tr > td.sorting_1 > a').click()
         time.sleep(2)
-        driver.switch_to_window(driver.window_handles[1])
-
+        # accept the note book share
+        driver.switch_to.window(driver.window_handles[1])
         # assert driver.find_element_by_xpath('//*[@id="acceptForm"]/input[3]').is_displayed()
         driver.find_element_by_css_selector('#acceptForm > input:nth-child(3)').click()
         driver.close()
