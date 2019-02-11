@@ -38,8 +38,27 @@ class TestCreateexperimentJane(unittest.TestCase):
         # assert driver.find_element_by_id('attachmentTable').is_displayed
         # button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         # button.send_keys(Keys.ENTER)
+<<<<<<< HEAD
         driver.find_elements_by_link_text('Replace')[0].click()
         field = driver.find_element_by_xpath('//*[contains(@id, "file1_2")]')
+=======
+        # # download the file
+        # time.sleep(2)
+        driver.get('https://model.arxspan.com/arxlab/bio-JaneBiologist.asp?id=32659')
+        # driver.find_element_by_id('attachmentTable_tab').click()
+        #
+        # driver.find_elements_by_xpath('//td[4]/a[3]')[0].click()
+
+        # Make an edit to the file and save it locally and upload again
+        content = u'这是一段自动输入的测试内容'
+        js = "document.getElementByClassName('cke_wysiwyg_frame cke_reset').contentWindow. " \
+             "document.getElementsByTagName('body')[0].innerHTML = ' % s'" % content
+        driver.execute_script(js)
+
+        driver.find_element_by_id('attachmentTable_tab').click()
+        driver.find_elements_by_xpath('//*[contains(@id, "file_9")]/td[4]/a[2]')[0].click()
+        field = driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0]
+>>>>>>> c5e124cb3fe2cfceb7c3556c67722874ba0535ed
         driver.execute_script("arguments[0].style.display = 'block';", field)
         path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
         driver.find_element_by_xpath('//*[contains(@id, "file1_2")]').send_keys(str(path))
