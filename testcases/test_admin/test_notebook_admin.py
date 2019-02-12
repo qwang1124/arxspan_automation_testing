@@ -9,11 +9,11 @@ from selenium.webdriver.support.ui import Select
 
 class TestCreatenotebookAdmin(unittest.TestCase):
 
-    @allure.testcase('test create test_admin by test_admin')
+    @allure.testcase('test create notebook by test_admin')
     def testcreatenotebook(self):
         driver = testadminlogin()
 
-        # create test_admin by admin
+        # create notebook by admin
         driver.find_element_by_id('createNewNotebookLeftNavButton').click()
         driver.find_element_by_id('notebookName').send_keys('Test_Notebook_Q')
         driver.find_element_by_name('notebookDescription').send_keys('Test Script execution-01/01/2019')
@@ -37,7 +37,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
         self.assertTrue(valid)
         driver.close()
 
-    @allure.testcase('test share test_admin to Joe')
+    @allure.testcase('test share notebook to Joe')
     def testsharenotebookjoe(self):
         driver = testadminlogin()
         driver.find_element_by_id('navMyNotebooksLink').click()
@@ -58,7 +58,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
         assert driver.find_elements_by_id('newPermissions')[0].is_displayed()
         driver.close()
 
-    @allure.testcase('test share test_admin to Jane Biologist')
+    @allure.testcase('test share notebook to Jane')
     def testsharenotebookjane(self):
         driver = testadminlogin()
         driver.find_element_by_id('navMyNotebooksLink').click()

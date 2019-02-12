@@ -35,7 +35,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         # button.send_keys(Keys.ENTER)
         # # download the file
         # time.sleep(2)
-        driver.get('https://model.arxspan.com/arxlab/bio-JaneBiologist.asp?id=32659')
+        driver.get('https://model.arxspan.com/arxlab/bio-test_JaneBiologist.asp?id=32659')
         # driver.find_element_by_id('attachmentTable_tab').click()
         #
         # driver.find_elements_by_xpath('//td[4]/a[3]')[0].click()
@@ -62,14 +62,14 @@ class TestCreateexperimentJane(unittest.TestCase):
 
 def testjanelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get('https://model.arxspan.com/login.asp')
+    driver.get('https://model.arxspan.com/test_login.asp')
     # driver.maximize_window()
-    driver.find_element_by_id('login-email').send_keys('jane@demo.com')
-    driver.find_element_by_id('login-pass').send_keys('carbonCopee')
-    driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
+    driver.find_element_by_id('test_login-email').send_keys('jane@demo.com')
+    driver.find_element_by_id('test_login-pass').send_keys('carbonCopee')
+    driver.find_element_by_id('test_login-submit').send_keys(Keys.RETURN)
     time.sleep(1)
     select = Select(driver.find_element_by_tag_name('select'))
     select.select_by_visible_text('Model Test Script Company')
-    driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
+    driver.find_element_by_id('test_login-submit').send_keys(Keys.ENTER)
     return driver
 

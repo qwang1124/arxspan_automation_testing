@@ -24,7 +24,7 @@ class TestWitnessJane(unittest.TestCase):
         form.click()
         driver.find_element_by_id('witnessSubmitButton').click()
         time.sleep(1)
-        driver.get('https://model.arxspan.com/arxlab/anal-JaneBiologist.asp?id=946')
+        driver.get('https://model.arxspan.com/arxlab/anal-test_JaneBiologist.asp?id=946')
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_link_text('Logout').click()
         driver.close()
@@ -32,13 +32,13 @@ class TestWitnessJane(unittest.TestCase):
 
 def testjanelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get('https://model.arxspan.com/login.asp')
-    driver.find_element_by_id('login-email').send_keys('jane@demo.com')
-    driver.find_element_by_id('login-pass').send_keys('carbonCopee')
-    driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
+    driver.get('https://model.arxspan.com/test_login.asp')
+    driver.find_element_by_id('test_login-email').send_keys('jane@demo.com')
+    driver.find_element_by_id('test_login-pass').send_keys('carbonCopee')
+    driver.find_element_by_id('test_login-submit').send_keys(Keys.RETURN)
     time.sleep(1)
     select = Select(driver.find_element_by_tag_name('select'))
     select.select_by_visible_text('Model Test Script Company')
-    driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
+    driver.find_element_by_id('test_login-submit').send_keys(Keys.ENTER)
     return driver
 

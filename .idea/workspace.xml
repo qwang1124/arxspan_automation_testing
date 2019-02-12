@@ -2,20 +2,90 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f5e3e4a7-4260-43f6-9584-050f58404d02" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/conceptexperiment_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_acceptnotebookshare_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_acceptnotebookshare_joe.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_acceptrejectedanalyticalwitness_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_acceptrejectedchemistrywitness_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_analyticalexperiment_joe.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_analyticalwitness_joe.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_biologyexperiment_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_chemistryexperiment_joe.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_chemistryexperimentwitness_joe.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_conceptexperiment_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_login_admin.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_login_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_login_joe.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_notebook_admin.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_rejectanalyticalwitness_jane.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_rejectchemistrywitness_jane.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/AAT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/AAT.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conceptexperiment.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/experiment_joe.sh" beforeDir="false" afterPath="$PROJECT_DIR$/experiment_joe.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login_script.sh" beforeDir="false" afterPath="$PROJECT_DIR$/login_script.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/acceptwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/JaneBiologist/analyticalacceptrejectedwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/rejectwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/JaneBiologist/analyticalrejectwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/witnessacceptation_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/JaneBiologist/experimentwitnessrejectedacceptation_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/witnessrejection_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/JaneBiologist/experimentwitnessrejection_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/witness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/JoeChemist/experimentwitness_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/acceptwitness.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/analyticalexperiment.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/analyticalwitness.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/rejectwitness.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyticalacceptrejectedwitness_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyticalexperiment_joe.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyticalrejectwitness_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/analyticalwitness_joe.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conceptexperiment_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/createsharenotebook_admin.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiment_joe.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentwitness_joe.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentwitnessrejectedacceptation_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/experimentwitnessrejection_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_joe.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/login_script.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebook_shareaccept_joe.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notebookshareaccept_jane.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/Admin/createsharenotebook_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_admin/test_notebook_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/analyticalacceptrejectedwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedchemistrywitness_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/analyticalrejectwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectchemistrywitness_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/conceptexperiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_conceptexperiment_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/experiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_biologyexperiment_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/experimentwitnessrejectedacceptation_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedanalyticalwitness_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/experimentwitnessrejection_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectanalyticalwitness_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/notebook_shareaccept_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptnotebookshare_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/resources/06 epoxide opening.cdx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/resources/06 epoxide opening.cdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/resources/AlportsHistologyAnalysis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/resources/AlportsHistologyAnalysis.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/resources/Alports_Histology.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/resources/Alports_Histology.ppt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/resources/GeneralFACSprotocol.doc" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/resources/GeneralFACSprotocol.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/resources/InventoryBulkUpdate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/resources/InventoryBulkUpdate.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/resources/nmrketalreduction21H.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/resources/nmrketalreduction21H.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JaneBiologist/resources/~$Xenograft.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/resources/~$Xenograft.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/analyticalexperiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalexperiment_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/analyticalwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalwitness_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/experiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryexperiment_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/experimentwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryexperimentwitness_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/notebook_shareaccept_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_acceptnotebookshare_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/06 epoxide opening.cdx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/06 epoxide opening.cdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/AlportsHistologyAnalysis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/AlportsHistologyAnalysis.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/Alports_Histology.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/Alports_Histology.ppt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/GeneralFACSprotocol.doc" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/GeneralFACSprotocol.doc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/InventoryBulkUpdate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/InventoryBulkUpdate.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/PushTestingProtocolforELN.docx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/PushTestingProtocolforELN.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/nmrketalreduction21H.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/nmrketalreduction21H.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/JoeChemist/resources/~$Xenograft.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/resources/~$Xenograft.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/acceptwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/acceptwitness_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalexperiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalexperiment_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalwitness_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/rejectwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/rejectwitness_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/experiment/experiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/experiment/experiment_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/experiment/experiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/experiment/experiment_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/login/login_test_Jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_login/login_test_Jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/login/login_test_Joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_login/login_test_Joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/login/login_test_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_login/login_test_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/notebook/createsharenotebook_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/createsharenotebook_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/witnessrejection/witness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/witnessrejection/witness_joe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/witnessrejection/witnessacceptation_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/witnessrejection/witnessacceptation_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/witnessrejection/witnessrejection_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/witnessrejection/witnessrejection_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_internal/utils/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/appdirs.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/appdirs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/pip-10.0.1-py3.7.egg/pip/_vendor/requests/utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/venv/lib/python3.7/site-packages/requests/utils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,21 +94,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login_script.sh">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/login_joe.sh">
+        <entry file="file://$PROJECT_DIR$/test_acceptnotebookshare_jane.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+            <state>
+              <caret selection-end-line="4" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -58,14 +119,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/createnotebook_test_admin.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/createnotebook_admin.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_joe.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/__init__.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/create_experiment_jane.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/witnessrejection/witnessjane.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/witnessrejection/witnessjoe.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/conceptexperiment/conceptexperiment_jane.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/conceptexperiment/conceptexperiment_joe.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/conceptexperiment/witness_joe.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/conceptexperiment/analyticalexperniment_joe.py" />
@@ -94,29 +147,37 @@
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalexperiment_joe.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/analyticalwitness_joe.py" />
         <option value="$PROJECT_DIR$/conceptexperiment.sh" />
-        <option value="$PROJECT_DIR$/notebookshareaccept_jane.sh" />
         <option value="$PROJECT_DIR$/experimentwitnessrejection.sh" />
-        <option value="$PROJECT_DIR$/experimentwitnessrejectedacceptation_jane.sh" />
-        <option value="$PROJECT_DIR$/experiment_jane.sh" />
+        <option value="$PROJECT_DIR$/testcases/Admin/createsharenotebook_admin.py" />
+        <option value="$PROJECT_DIR$/testcases/JaneBiologist/analyticalacceptrejectedwitness_jane.py" />
+        <option value="$PROJECT_DIR$/testcases/JaneBiologist/analyticalrejectwitness_jane.py" />
+        <option value="$PROJECT_DIR$/testcases/JaneBiologist/experiment_jane.py" />
         <option value="$PROJECT_DIR$/analyticalacceptrejectedwitness_jane.sh" />
-        <option value="$PROJECT_DIR$/analyticalrejectwitness_jane.sh" />
-        <option value="$PROJECT_DIR$/experiment_joe.sh" />
+        <option value="$PROJECT_DIR$/test_acceptrejectedanalyticalwitness_jane.sh" />
         <option value="$PROJECT_DIR$/analyticalexperiment_joe.sh" />
+        <option value="$PROJECT_DIR$/analyticalrejectwitness_jane.sh" />
         <option value="$PROJECT_DIR$/analyticalwitness_joe.sh" />
-        <option value="$PROJECT_DIR$/experimentwitness_joe.sh" />
-        <option value="$PROJECT_DIR$/notebook_shareaccept_joe.sh" />
+        <option value="$PROJECT_DIR$/conceptexperiment_jane.sh" />
         <option value="$PROJECT_DIR$/createsharenotebook_admin.sh" />
+        <option value="$PROJECT_DIR$/experiment_jane.sh" />
+        <option value="$PROJECT_DIR$/experiment_joe.sh" />
+        <option value="$PROJECT_DIR$/test_chemistryexperiment_joe.sh" />
+        <option value="$PROJECT_DIR$/experimentwitness_joe.sh" />
+        <option value="$PROJECT_DIR$/experimentwitnessrejectedacceptation_jane.sh" />
+        <option value="$PROJECT_DIR$/experimentwitnessrejection_jane.sh" />
         <option value="$PROJECT_DIR$/login_jane.sh" />
-        <option value="$PROJECT_DIR$/login_script.sh" />
         <option value="$PROJECT_DIR$/login_joe.sh" />
+        <option value="$PROJECT_DIR$/login_script.sh" />
+        <option value="$PROJECT_DIR$/notebook_shareaccept_joe.sh" />
+        <option value="$PROJECT_DIR$/notebookshareaccept_jane.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="737" />
-    <option name="y" value="41" />
-    <option name="width" value="1113" />
-    <option name="height" value="915" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1115" />
+    <option name="height" value="813" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -124,34 +185,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="Admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="login" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -199,11 +232,44 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test_admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="test_login" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/ArxLab Internal Development" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -375,14 +441,13 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="590" y="33" width="890" height="732" extended-state="0" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3880422" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14210178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3290653" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32818532" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.2765685" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47631243" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -390,7 +455,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32953104" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.29833335" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.34555984" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -537,13 +602,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/README.md" />
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/login/login_test_admin.py" />
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/experiment_joe.sh" />
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/acceptwitness.sh" />
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/login_script.sh" />
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/testsharenotebookjane_20190205092959 .png" />
-    <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/notebook/testsharenotebookjane_20190205105417 .png" />
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/Admin/createsharenotebook_admin.py" />
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/Admin/notebook_shareaccept_joe.py" />
     <entry file="file://$PROJECT_DIR$/arxspan_automation_testing/testcases/Admin/notebook_shareaccept_jane.py" />
@@ -585,6 +643,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/acceptwitness.sh" />
+    <entry file="file://$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalwitness_joe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_admin/test_notebook_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="188">
+          <caret line="78" column="39" lean-forward="true" selection-start-line="78" selection-start-column="39" selection-end-line="78" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectchemistrywitness_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="38" selection-start-line="21" selection-start-column="8" selection-end-line="23" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectanalyticalwitness_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="31" column="22" lean-forward="true" selection-start-line="31" selection-start-column="22" selection-end-line="31" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -594,127 +692,153 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/acceptwitness.sh">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conceptexperiment_jane.sh">
+    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/test_conceptexperiment_jane.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/notebookshareaccept_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="1" column="9" lean-forward="true" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experimentwitnessrejectedacceptation_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analyticalacceptrejectedwitness_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analyticalrejectwitness_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-end-line="4" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analyticalexperiment_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/analyticalwitness_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/JoeChemist/analyticalwitness_joe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="-30">
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimentwitness_joe.sh">
+    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/test_biologyexperiment_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedanalyticalwitness_jane.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_analyticalexperiment_joe.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experimentwitnessrejection_jane.sh">
+    <entry file="file://$PROJECT_DIR$/test_rejectanalyticalwitness_jane.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="32" lean-forward="true" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/notebook_shareaccept_joe.sh">
+    <entry file="file://$PROJECT_DIR$/test_analyticalwitness_joe.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="23" lean-forward="true" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/experiment_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/createsharenotebook_admin.sh">
+    <entry file="file://$PROJECT_DIR$/test_conceptexperiment_jane.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_jane.sh">
+    <entry file="file://$PROJECT_DIR$/test_notebook_admin.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_script.sh">
+    <entry file="file://$PROJECT_DIR$/test_biologyexperiment_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_chemistryexperiment_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_chemistryexperimentwitness_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_acceptrejectedchemistrywitness_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_rejectchemistrywitness_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_acceptrejectedanalyticalwitness_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_login_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_login_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_login_admin.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login_joe.sh">
+    <entry file="file://$PROJECT_DIR$/testcases/test_JoeChemist/test_acceptnotebookshare_joe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_acceptnotebookshare_joe.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_acceptnotebookshare_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="4" selection-end-column="37" />
         </state>
       </provider>
     </entry>

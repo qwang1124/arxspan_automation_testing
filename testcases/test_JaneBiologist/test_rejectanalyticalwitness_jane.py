@@ -12,15 +12,22 @@ class TestWitnessJane(unittest.TestCase):
     @allure.testcase('witnessrejectionjane')
     def test1(self):
         driver = testjanelogin()
+        time.sleep(2)
+        # check the notification is showing on witness request
         assert driver.find_element_by_id('witnessRequestsHolder').is_displayed()
+        # reject the witness request and add note "TESTING"
         driver.find_element_by_xpath('//*[@id="witnessRequestsHolder"]/div/div[2]/table/tbody/tr[1]/td[2]/a').click()
         button = driver.find_element_by_css_selector('#witnessButtons > a:nth-child(2)')
         button.click()
         driver.find_element_by_id('reasonBox').send_keys('TESTING')
         driver.find_element_by_id('rejectSubmitButton').click()
-        time.sleep(2)
-        driver.get('https://model.arxspan.com/arxlab/anal-test_JaneBiologist.asp?id=946')
+        time.sleep(4)
+        # return to dashboard page, confirm that a new entry is generated in the Experiment History
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+        driver.find_element_by_xpath('//*[@id="pageContentTD"]/div/table/tbody/tr[1]/td/div/div[2]/table/tbody/tr['
+                                     '1]/td[2]/a').click()
         assert driver.find_element_by_id('historyNavLink').is_displayed()
+        # logout
         driver.find_element_by_link_text('Logout').click()
         driver.close()
 
