@@ -31,7 +31,7 @@ from pathlib import Path
 class TestCreateexperimentJoe(unittest.TestCase):
     @allure.testcase('createexperiment')
     def test1(self):
-        driver = testjoelogin()
+        driver = joelogin()
         time.sleep(1)
         # Create new chemistry experiment
         driver.find_element_by_xpath('//*[@id="navMyNotebooks"]/ul/li/a').click()
@@ -41,8 +41,8 @@ class TestCreateexperimentJoe(unittest.TestCase):
         time.sleep(2)
         # add a new note to the experiment
         driver.find_element_by_id('addNoteButton').click()
-        time.sleep(1)
-        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[6]
+        time.sleep(2)
+        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[5]
         driver.execute_script("arguments[0].innerHTML='<p>this is test</p>'", text)
         time.sleep(1)
         save = driver.find_element_by_xpath('//*[contains(@id, "note_p")]/div[4]/a[1]')
@@ -122,7 +122,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         # add a new note to the experiment
         driver.find_element_by_id('addNoteButton').click()
         time.sleep(1)
-        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[6]
+        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[5]
         driver.execute_script("arguments[0].innerHTML='<p>this is test</p>'", text)
         time.sleep(1)
         save = driver.find_element_by_xpath('//*[contains(@id, "note_p")]/div[4]/a[1]')
@@ -152,7 +152,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.close()
 
 
-def testjoelogin():
+def joelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     driver.find_element_by_id('login-email').send_keys('joe@demo.com')

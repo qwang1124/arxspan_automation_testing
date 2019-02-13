@@ -30,7 +30,7 @@ from pathlib import Path
 class TestcoceptexpernimentJane(unittest.TestCase):
     @allure.testcase('createconceptexperiment')
     def test1(self):
-        driver = testjanelogin()
+        driver = janelogin()
         time.sleep(2)
         # Create a new concept experiment
         driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
@@ -123,7 +123,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         driver.close()
 
 
-def testjanelogin():
+def janelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     driver.find_element_by_id('login-email').send_keys('jane@demo.com')

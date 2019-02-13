@@ -24,7 +24,7 @@ class TestWitnessJane(unittest.TestCase):
 
     @allure.testcase('witnessacceptationjane')
     def test1(self):
-        driver = testjanelogin()
+        driver = janelogin()
         # check the witness requests is showing the notification
         assert driver.find_element_by_id('witnessRequestsHolder').is_displayed()
         # select the analytical experiment name
@@ -50,7 +50,7 @@ class TestWitnessJane(unittest.TestCase):
         driver.close()
 
 
-def testjanelogin():
+def janelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     driver.find_element_by_id('login-email').send_keys('jane@demo.com')

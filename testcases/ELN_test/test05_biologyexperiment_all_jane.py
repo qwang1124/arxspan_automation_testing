@@ -35,7 +35,7 @@ class TestCreateexperimentJane(unittest.TestCase):
 
     @allure.testcase('createexperiment')
     def test1(self):
-        driver = testjanelogin()
+        driver = janelogin()
         time.sleep(1)
         # Create new Biologist experiment
         driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
@@ -193,7 +193,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.close()
 
 
-def testjanelogin():
+def janelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     # driver.maximize_window()

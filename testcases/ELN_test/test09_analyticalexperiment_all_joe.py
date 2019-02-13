@@ -33,7 +33,7 @@ from pathlib import Path
 class TestanalyticalexpernimentJoe(unittest.TestCase):
     @allure.testcase('createanalyticalexperniment')
     def test1(self):
-        driver = testjoelogin()
+        driver = joelogin()
         time.sleep(2)
         # Select the recently note book
         driver.find_element_by_xpath('//*[@id="navMyNotebooks"]/ul/li/a').click()
@@ -179,15 +179,17 @@ class TestanalyticalexpernimentJoe(unittest.TestCase):
         time.sleep(1)
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
         time.sleep(6)
-        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
-        time.sleep(2)
-        assert driver.find_element_by_id('historyNavLink').is_displayed()
+        # driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        # time.sleep(2)
+        # assert driver.find_element_by_id('historyNavLink').is_displayed()
         # Log out
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+        time.sleep(2)
         driver.find_element_by_link_text('Logout').click()
         driver.close()
 
 
-def testjoelogin():
+def joelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     driver.find_element_by_id('login-email').send_keys('joe@demo.com')

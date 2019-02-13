@@ -26,14 +26,14 @@ class TestWitnessJoe(unittest.TestCase):
 
     @allure.testcase('witnessrejectionjoe')
     def test1(self):
-        driver = testjoelogin()
+        driver = joelogin()
         time.sleep(2)
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
         time.sleep(2)
         # check the rejection reason is showing
         driver.find_element_by_id('noteTable_tab').click()
         driver.find_element_by_link_text('Witness Request Rejection').click()
-        assert driver.find_element_by_class_name('attachmentsIndexTable').is_displayed()
+        assert driver.find_element_by_id('noteTable_tab').is_displayed()
         # add new note
         driver.find_element_by_id('addNoteButton').click()
         time.sleep(2)
@@ -42,7 +42,6 @@ class TestWitnessJoe(unittest.TestCase):
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
         time.sleep(6)
-        driver.close()
 
         # Sign & Close, selecting Jane Biologist as the Witness
         driver.find_element_by_id('signExperimentButton').click()
@@ -63,7 +62,7 @@ class TestWitnessJoe(unittest.TestCase):
         driver.close()
 
 
-def testjoelogin():
+def joelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     driver.find_element_by_id('login-email').send_keys('joe@demo.com')

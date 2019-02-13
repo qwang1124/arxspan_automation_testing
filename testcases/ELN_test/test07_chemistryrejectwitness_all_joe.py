@@ -28,7 +28,7 @@ class TestWitnessJoe(unittest.TestCase):
 
     @allure.testcase('witnessjoe')
     def test1(self):
-        driver = testjoelogin()
+        driver = joelogin()
         time.sleep(2)
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
         time.sleep(2)
@@ -39,7 +39,7 @@ class TestWitnessJoe(unittest.TestCase):
         # add new note
         driver.find_element_by_id('addNoteButton').click()
         time.sleep(2)
-        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[6]
+        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[5]
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
@@ -63,7 +63,7 @@ class TestWitnessJoe(unittest.TestCase):
         driver.close()
 
 
-def testjoelogin():
+def joelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     driver.find_element_by_id('login-email').send_keys('joe@demo.com')

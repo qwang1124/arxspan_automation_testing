@@ -27,7 +27,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
 
     @allure.testcase('test create notebook by Admin')
     def test1(self):
-        driver = testadminlogin()
+        driver = adminlogin()
         # create notebook by admin
         driver.find_element_by_id('createNewNotebookLeftNavButton').click()
         driver.find_element_by_id('notebookName').send_keys('Test_Note_book_QW')
@@ -88,7 +88,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
         driver.close()
 
 
-def testadminlogin():
+def adminlogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
     driver.maximize_window()
