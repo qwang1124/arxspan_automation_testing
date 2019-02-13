@@ -144,7 +144,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         time.sleep(2)
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
-        time.sleep(4)
+        time.sleep(6)
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         # logout
         driver.find_element_by_link_text('Logout').click()
