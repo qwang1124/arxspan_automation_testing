@@ -43,7 +43,8 @@ class TestanalyticalexpernimentJoe(unittest.TestCase):
         button.click()
         time.sleep(2)
         # Add a new note
-        text = driver.find_element_by_id('cke_17_contents')
+        driver.find_element_by_id('addNoteButton').click()
+        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[6]
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
         save = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         save.send_keys(Keys.ENTER)

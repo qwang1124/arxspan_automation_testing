@@ -42,7 +42,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         # add a new note to the experiment
         driver.find_element_by_id('addNoteButton').click()
         time.sleep(1)
-        text = driver.find_element_by_id('cke_250_contents')
+        text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[6]
         driver.execute_script("arguments[0].innerHTML='<p>this is test</p>'", text)
         time.sleep(1)
         save = driver.find_element_by_xpath('//*[contains(@id, "note_p")]/div[4]/a[1]')

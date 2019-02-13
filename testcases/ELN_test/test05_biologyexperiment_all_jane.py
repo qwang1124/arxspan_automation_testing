@@ -37,7 +37,7 @@ class TestCreateexperimentJane(unittest.TestCase):
     def test1(self):
         driver = testjanelogin()
         time.sleep(1)
-        # # Create new Biologist experiment
+        # Create new Biologist experiment
         driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
         driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(3)').click()
         time.sleep(2)
@@ -48,7 +48,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
         time.sleep(2)
         # Add a new protocol note
-        elm = driver.find_element_by_id('cke_17_contents')
+        elm = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[4]
         time.sleep(6)
         elm.click()
         time.sleep(2)
