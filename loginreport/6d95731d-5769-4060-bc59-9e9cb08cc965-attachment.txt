@@ -1,5 +1,0 @@
-
-Checking for win32 chromedriver:2.45 in cache
-Driver found in C:\Users\Ms. Wang\.wdm\chromedriver\2.45\win32/chromedriver.exe
-System Administrator
-BIM

@@ -75,12 +75,18 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
             .send_keys(str(path))
         time.sleep(2)
-        # add a new note to the file
+        # add a new note to the experiment
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+        time.sleep(2)
+        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        time.sleep(2)
+        driver.find_element_by_id('addNoteButton').click()
+        time.sleep(2)
         text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[5]
+
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
-        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
-                                                     'section.bottomButtons.buttonAlignedRight > button')
-        button.click()
+        save = driver.find_element_by_xpath('//*[contains(@id, "note_p")]/div[4]/a[1]')
+        save.send_keys(Keys.ENTER)
         time.sleep(6)
         assert driver.find_element_by_id('historyNavLink').is_displayed()
         driver.find_element_by_id('attachmentTable_tab').click()
@@ -108,10 +114,10 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
         time.sleep(4)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
-        time.sleep(2)
-        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
-        time.sleep(6)
-        assert driver.find_element_by_id('historyNavLink').is_displayed()
+        # time.sleep(2)
+        # driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        # time.sleep(6)
+        # assert driver.find_element_by_id('historyNavLink').is_displayed()
         # log out
         driver.find_element_by_link_text('Logout').click()
         driver.close()

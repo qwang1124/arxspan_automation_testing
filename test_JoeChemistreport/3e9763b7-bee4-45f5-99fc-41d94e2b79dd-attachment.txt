@@ -1,3 +1,0 @@
-
-Checking for win32 chromedriver:2.46 in cache
-Driver found in C:\Users\QingW\.wdm\chromedriver\2.46\win32/chromedriver.exe

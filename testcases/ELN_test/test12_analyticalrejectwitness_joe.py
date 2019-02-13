@@ -36,6 +36,7 @@ class TestWitnessJoe(unittest.TestCase):
         assert driver.find_element_by_class_name('attachmentsIndexTable').is_displayed()
         # add new note
         driver.find_element_by_id('addNoteButton').click()
+        time.sleep(2)
         text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[6]
         driver.execute_script("arguments[0].innerHTML = 'TESTING TESTING'", text)
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
