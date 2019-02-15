@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-01
 # Test name: Create the new note book and share to Joe and Jane Test
 # Expect output:
 #      1. Create a new note book on today's date;
@@ -65,6 +65,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
         assert driver.find_element_by_class_name('userTitle').is_displayed()
         assert driver.find_elements_by_id('newPermissions')[0].is_displayed()
         # Share test_admin with Jane Biologist
+        time.sleep(1)
         driver.find_element_by_id('shareNotebookLink').click()
         driver.find_element_by_class_name('groupSelectLink').click()
         driver.find_element_by_id('listGroupCheckUser-1787').click()

@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-02
 # Test name: Joe has accept the note book share by Admin Test
 # Expect output:
 #      1. Check received invitation from Admin ;

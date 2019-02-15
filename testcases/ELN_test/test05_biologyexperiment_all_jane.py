@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-05
 # Test name: Create Biologist experiment by Jane and upload files and send witness request to Joe Test
 # Expect output:
 #      1. Create a new Biologist experiment;
@@ -184,10 +184,10 @@ class TestCreateexperimentJane(unittest.TestCase):
         time.sleep(6)
         driver.get('https://model.arxspan.com/login.asp')
         time.sleep(2)
-        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        # driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        # time.sleep(2)
+        # assert driver.find_element_by_id('historyNavLink').is_displayed()
         time.sleep(2)
-        assert driver.find_element_by_id('historyNavLink').is_displayed()
-
         # logout
         driver.find_element_by_link_text('Logout').click()
         driver.close()

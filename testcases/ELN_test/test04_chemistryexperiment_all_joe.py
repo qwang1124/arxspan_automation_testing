@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-04
 # Test name: Create chemistry experiment by Joe and upload files and send witness request to Joe Test
 # Expect output:
 #      1. Create a new Biologist experiment;
@@ -146,6 +146,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
         time.sleep(6)
         assert driver.find_element_by_id('historyNavLink').is_displayed()
+        time.sleep(2)
         # logout
         driver.find_element_by_link_text('Logout').click()
         time.sleep(1)

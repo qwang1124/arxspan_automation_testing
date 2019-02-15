@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-010
 # Test name: Create Concept experiment by Joe and upload files and send witness request to Joe Test
 # Expect output:
 #      1. Create a new Concept experiment;

@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-07
 # Test name: Joe witnessing rejected experiment and send request to Jane agagin Test
 # Expect output:
 #      1. Witnessing successful;

@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-09
 # Test name: Create analytical experiment by Joe and upload files and send witness request to Jane Test
 # Expect output:
 #      1. Create a new analytical experiment;

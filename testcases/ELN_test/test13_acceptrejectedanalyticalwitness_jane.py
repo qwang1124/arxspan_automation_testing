@@ -1,4 +1,4 @@
-# Test ID: test-01
+# Test ID: testELN-013
 # Test name: Jane has accept the analytical experiment witness request by Joe Test
 # Expect output:
 #      1. Check received witness request from Joe is showing ;
