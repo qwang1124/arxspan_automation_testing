@@ -24,7 +24,7 @@ class TestNotebookJane(unittest.TestCase):
         driver = janelogin()
         driver.find_element_by_link_text('Invitations').click()
         time.sleep(2)
-        driver.find_element_by_css_selector('#SummaryTable > tbody > tr > td.sorting_1 > a').click()
+        driver.find_element_by_xpath('//*[@id="SummaryTable"]/tbody/tr/td[1]/a').click()
         time.sleep(2)
         # accept the note book share
         driver.switch_to.window(driver.window_handles[1])

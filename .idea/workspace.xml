@@ -3,49 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f5e3e4a7-4260-43f6-9584-050f58404d02" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/acceptwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/acceptwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalexperiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalexperiment_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/analyticalwitness_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/rejectwitness_jane.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/06 epoxide opening.cdx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/06 epoxide opening.cdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/AlportsHistologyAnalysis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/AlportsHistologyAnalysis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/Alports_Histology.ppt" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/Alports_Histology.ppt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/GeneralFACSprotocol.doc" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/GeneralFACSprotocol.doc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/InventoryBulkUpdate.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/InventoryBulkUpdate.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/PushTestingProtocolforELN.docx" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/PushTestingProtocolforELN.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/nmrketalreduction21H.txt" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/nmrketalreduction21H.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/conceptexperiment/resources/~$Xenograft.xls" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/resources/~$Xenograft.xls" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/experiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/experiment/experiment_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/experiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/experiment/experiment_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/resources/06 epoxide opening.cdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/resources/AlportsHistologyAnalysis.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/resources/Alports_Histology.ppt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/resources/GeneralFACSprotocol.doc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/resources/InventoryBulkUpdate.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/resources/nmrketalreduction21H.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/experiment/resources/~$Xenograft.xls" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/notebook/createsharenotebook_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/createsharenotebook_admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/notebook/notebook_shareaccept_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/acceptanalyticalwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/acceptanalyticalwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/chemistrywitnessacceptation_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/chemistrywitnessacceptation_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/chemistrywitnessrejection_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/chemistrywitnessrejection_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptnotebookshare_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptnotebookshare_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedanalyticalwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedanalyticalwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedchemistrywitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedchemistrywitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_biologyexperiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_biologyexperiment_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_conceptexperiment_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_conceptexperiment_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectanalyticalwitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectanalyticalwitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectchemistrywitness_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectchemistrywitness_jane.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JoeChemist/analyticalrejectwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/analyticalrejectwitness_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JoeChemist/test_acceptnotebookshare_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_acceptnotebookshare_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalexperiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalexperiment_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalwitness_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryexperiment_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryexperiment_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryexperimentwitness_joe.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryrejectwitness_joe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testcases/test_admin/test_notebook_admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test_admin/test_notebook_admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/ELN_test/test03_acceptnotebookshare_jane.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/ELN_test/test03_acceptnotebookshare_jane.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testcases/test0_running_all_cases.py" beforeDir="false" afterPath="$PROJECT_DIR$/testcases/test0_running_all_cases.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -56,10 +16,87 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test11_analyticalrejectwitness_joe.py">
+        <entry file="file://$PROJECT_DIR$/test0_running_all_cases.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+            <state relative-caret-position="323">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test01_notebook_all_admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="110">
+              <caret line="93" column="20" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#11#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="171">
+                <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test10_conceptexperiment_jane.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="103" selection-start-line="2" selection-end-line="2" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test07_chemistryrejectwitness_joe.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="96" selection-start-line="2" selection-end-line="2" selection-end-column="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test06_rejectchemistrywitness_jane.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="104" selection-start-line="2" selection-end-line="2" selection-end-column="110" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test05_biologyexperiment_jane.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="82" selection-start-line="2" selection-end-line="2" selection-end-column="109" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test04_chemistryexperiment_all_joe.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="2" column="93" selection-start-line="2" selection-end-line="2" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -79,13 +116,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/witnessrejection/witness_joe.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/test.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/experiment/experiment_jane.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/experiment_jane.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/rejectwitness_jane.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/acceptanalyticalwitness_jane.py" />
-        <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/witnessrejection_jane.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/witnessacceptation_jane.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JoeChemist/experiment_joe.py" />
         <option value="$PROJECT_DIR$/arxspan_automation_testing/testcases/JaneBiologist/conceptexperiment_jane.py" />
@@ -130,14 +160,21 @@
         <option value="$PROJECT_DIR$/testcases/test_JoeChemist/test_analyticalexperiment_joe(all).py" />
         <option value="$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectanalyticalwitness_jane.py" />
         <option value="$PROJECT_DIR$/testcases/test_JoeChemist/test11_analyticalrejectwitness_joe.py" />
+        <option value="$PROJECT_DIR$/testcases/ELN_test/test03_acceptnotebookshare_jane.py" />
+        <option value="$PROJECT_DIR$/testcases/ELN_test/test0_running_all_cases.py" />
+        <option value="$PROJECT_DIR$/testcases/test0_running_all_cases.py" />
+        <option value="$PROJECT_DIR$/test01_notebook_admin.sh" />
+        <option value="$PROJECT_DIR$/test05_biologyexperiment_jane.sh" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/test0_running_all_cases.sh" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="747" />
-    <option name="y" value="72" />
-    <option name="width" value="1229" />
-    <option name="height" value="998" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="51" />
+    <option name="y" value="10" />
+    <option name="width" value="1230" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -145,6 +182,28 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+          <expand>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="ELN_test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,45 +251,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="ELN_test" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test_admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="testcases" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="test_JoeChemist" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="arxspan_automation_testing" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="venv" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -238,19 +258,19 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing" />
+      <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases" />
+      <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases\ELN_test" />
+      <recent name="C:\Users\QingW\Documents\AAT\arxspan_automation_testing" />
+      <recent name="C:\Users\QingW\Documents\AAT\arxspan_automation_testing\testcases" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing" />
       <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases\test_JoeChemist" />
       <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases\ELN_test" />
       <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases\test_JaneBiologist" />
       <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases\test_admin" />
-      <recent name="C:\Users\QingW\Documents\AAT\arxspan_automation_testing\testcases\JaneBiologist" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases\ELN_test" />
-      <recent name="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing" />
-      <recent name="C:\Users\QingW\Documents\AAT\arxspan_automation_testing" />
-      <recent name="C:\Users\QingW\Documents\AAT\arxspan_automation_testing\testcases" />
-      <recent name="C:\Users\QingW\Documents\AAT\arxspan_automation_testing\venv" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -265,22 +285,50 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in test08_analyticalexperiment_joe(all).py">
-    <configuration name="Unittests for test_biologyexperiment_jane(all).TestCreateexperimentJane.test1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python.test0_running_all_cases (1)">
+    <configuration name="test0_running_all_cases (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="AAT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/test_JaneBiologist" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_biologyexperiment_jane(all).TestCreateexperimentJane.test1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testcases/test0_running_all_cases.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test04_chemistryexperiment_joe(all).py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="test0_running_all_cases" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AAT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/ELN_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Ms. Wang\Downloads\arxspan_automation_testing\testcases\test0_running_all_cases.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests in C:/Users/Ms. Wang/Downloads/arxspan_automation_testing/testcases/ELN_test/test04_chemistryexperiment_joe(all).py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AAT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -294,21 +342,7 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test05_biologyexperiment_jane(all).py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="AAT" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/test_JaneBiologist" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/ELN_test/test05_biologyexperiment_jane(all).py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests in test08_analyticalexperiment_joe(all).py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in C:/Users/Ms. Wang/Downloads/arxspan_automation_testing/testcases/ELN_test/test08_analyticalexperiment_joe(all).py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AAT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -322,34 +356,34 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test09_conceptexperiment_jane(all).py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests in test03_acceptnotebookshare_jane.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="AAT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/test_JaneBiologist" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testcases/ELN_test" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/ELN_test/test09_conceptexperiment_jane(all).py&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/testcases/ELN_test/test03_acceptnotebookshare_jane.py&quot;" />
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python tests.Unittests in test05_biologyexperiment_jane(all).py" />
-      <item itemvalue="Python tests.Unittests for test_biologyexperiment_jane(all).TestCreateexperimentJane.test1 (1)" />
-      <item itemvalue="Python tests.Unittests in test09_conceptexperiment_jane(all).py" />
-      <item itemvalue="Python tests.Unittests in test04_chemistryexperiment_joe(all).py" />
-      <item itemvalue="Python tests.Unittests in test08_analyticalexperiment_joe(all).py" />
+      <item itemvalue="Python tests.Unittests in C:/Users/Ms. Wang/Downloads/arxspan_automation_testing/testcases/ELN_test/test04_chemistryexperiment_joe(all).py" />
+      <item itemvalue="Python tests.Unittests in C:/Users/Ms. Wang/Downloads/arxspan_automation_testing/testcases/ELN_test/test08_analyticalexperiment_joe(all).py" />
+      <item itemvalue="Python.test0_running_all_cases" />
+      <item itemvalue="Python tests.Unittests in test03_acceptnotebookshare_jane.py" />
+      <item itemvalue="Python.test0_running_all_cases (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in test08_analyticalexperiment_joe(all).py" />
-        <item itemvalue="Python tests.Unittests in test04_chemistryexperiment_joe(all).py" />
-        <item itemvalue="Python tests.Unittests in test09_conceptexperiment_jane(all).py" />
-        <item itemvalue="Python tests.Unittests in test05_biologyexperiment_jane(all).py" />
-        <item itemvalue="Python tests.Unittests for test_biologyexperiment_jane(all).TestCreateexperimentJane.test1 (1)" />
+        <item itemvalue="Python.test0_running_all_cases (1)" />
+        <item itemvalue="Python.test0_running_all_cases" />
+        <item itemvalue="Python tests.Unittests in test03_acceptnotebookshare_jane.py" />
+        <item itemvalue="Python tests.Unittests in C:/Users/Ms. Wang/Downloads/arxspan_automation_testing/testcases/ELN_test/test08_analyticalexperiment_joe(all).py" />
+        <item itemvalue="Python tests.Unittests in C:/Users/Ms. Wang/Downloads/arxspan_automation_testing/testcases/ELN_test/test04_chemistryexperiment_joe(all).py" />
       </list>
     </recent_temporary>
   </component>
@@ -375,9 +409,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_in_test_biologyexperiment_jane(all)_py - 2019.02.12 at 16h 20m 24s.xml">
-      <configuration name="Unittests in test_biologyexperiment_jane(all).py" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_in_test_biologyexperiment_jane(all)_py - 2019.02.12 at 16h 22m 12s.xml">
       <configuration name="Unittests in test_biologyexperiment_jane(all).py" configurationId="tests" />
     </history-entry>
@@ -405,25 +436,28 @@
     <history-entry file="Unittests_in_test_analyticalexperiment_joe(all)_py - 2019.02.12 at 19h 30m 44s.xml">
       <configuration name="Unittests in test_analyticalexperiment_joe(all).py" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_in_test03_acceptnotebookshare_jane_py - 2019.02.18 at 14h 52m 37s.xml">
+      <configuration name="Unittests in test03_acceptnotebookshare_jane.py" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="598" y="58" width="983" height="798" extended-state="0" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22727273" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1956378" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32818532" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3078078" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49947202" weight="0.47005987" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.47447446" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Inspection Results" order="8" weight="0.32953104" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.36636636" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.34560907" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.500528" side_tool="true" weight="0.45958084" />
       <window_info anchor="bottom" id="Python Console" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -502,11 +536,6 @@
           <line>31</line>
           <option name="timeStamp" value="220" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/testcases/ELN_test/test09_conceptexperiment_jane(all).py</url>
-          <line>45</line>
-          <option name="timeStamp" value="224" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -579,159 +608,7 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testcases/acceptwitness.sh" />
-    <entry file="file://$PROJECT_DIR$/testcases/conceptexperiment/conceptexperiment_jane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/test_acceptrejectedanalyticalwitness_jane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_analyticalexperiment_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_rejectanalyticalwitness_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_analyticalwitness_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_conceptexperiment_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_notebook_admin.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_biologyexperiment_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_chemistryexperiment_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_chemistryexperimentwitness_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_acceptrejectedchemistrywitness_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_rejectchemistrywitness_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="37" lean-forward="true" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_acceptrejectedanalyticalwitness_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_login_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_login_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_login_admin.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_acceptnotebookshare_joe.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_admin/test_notebook_admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="84" lean-forward="true" selection-start-line="84" selection-end-line="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_acceptnotebookshare_jane.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/acceptanalyticalwitness_jane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="54" column="19" lean-forward="true" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test01_notebook_admin(all).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1463">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/acceptanalyticalwitness_jane.py" />
     <entry file="file://$PROJECT_DIR$/../testcases-20190212T195341Z-001/testcases/JaneBiologist/experiment_jane.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="71">
@@ -765,9 +642,6 @@
         <state relative-caret-position="-480" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test03_acceptnotebookshare_jane.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/../testcases-20190212T195341Z-001/testcases/JoeChemist/notebook_shareaccept_joe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="33">
@@ -782,23 +656,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test09_conceptexperiment_jane(all).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="121" column="22" selection-start-line="121" selection-start-column="22" selection-end-line="121" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test02_acceptnotebookshare_joe.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test05_biologyexperiment_jane(all).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="82" column="49" selection-start-line="82" selection-start-column="49" selection-end-line="82" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test09_conceptexperiment_jane(all).py" />
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test05_biologyexperiment_jane(all).py" />
     <entry file="file://$PROJECT_DIR$/../testcases-20190212T195341Z-001/testcases/JoeChemist/experiment_joe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -826,13 +685,7 @@
     <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test06_rejectchemistrywitness_jane.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test04_chemistryexperiment_joe(all).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="43" column="21" lean-forward="true" selection-start-line="43" selection-start-column="21" selection-end-line="43" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test04_chemistryexperiment_joe(all).py" />
     <entry file="file://$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryrejectwitness_joe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="103">
@@ -840,22 +693,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryexperimentwitness_joe.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test07_chemistryrejectwitness_joe(all).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="49" column="39" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_JoeChemist/test_chemistryexperimentwitness_joe.py" />
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test07_chemistryrejectwitness_joe(all).py" />
     <entry file="file://$PROJECT_DIR$/../testcases-20190212T195341Z-001/testcases/JoeChemist/analyticalexperiment_joe.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -870,13 +709,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test08_analyticalexperiment_joe(all).py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="140" column="73" selection-start-line="140" selection-start-column="73" selection-end-line="140" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test08_analyticalexperiment_joe(all).py" />
     <entry file="file://$PROJECT_DIR$/../testcases-20190212T195341Z-001/testcases/JaneBiologist/rejectanalyticalwitness_jane.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
@@ -884,16 +717,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/rejectanalyticalwitness_jane.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="64" lean-forward="true" selection-end-line="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test10_rejectanalyticalwitness_jane.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/rejectanalyticalwitness_jane.py" />
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test10_rejectanalyticalwitness_jane.py" />
     <entry file="file://$PROJECT_DIR$/testcases/test_JaneBiologist/test_rejectanalyticalwitness_jane.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -913,10 +738,164 @@
     <entry file="file://$PROJECT_DIR$/testcases/test_JoeChemist/analyticalrejectwitness_joe.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test11_analyticalrejectwitness_joe.py">
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test01_notebook_admin(all).py" />
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test11_analyticalrejectwitness_joe.py" />
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test03_acceptnotebookshare_jane.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="58" column="16" lean-forward="true" selection-start-line="58" selection-start-column="16" selection-end-line="58" selection-end-column="16" />
+        <state relative-caret-position="32">
+          <caret line="21" column="52" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test_login/login_test_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1140">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="e#336#366#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test02_acceptnotebookshare_joe.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/test0_running_all_cases.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="12" column="50" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="50" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test02_acceptnotebookshare_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="95" selection-start-line="2" selection-end-line="2" selection-end-column="103" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test01_notebook_admin.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test03_acceptnotebookshare_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="98" selection-start-line="2" selection-end-line="2" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test04_chemistryexperiment_all_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="93" selection-start-line="2" selection-end-line="2" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test05_biologyexperiment_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="82" selection-start-line="2" selection-end-line="2" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test06_rejectchemistrywitness_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="104" selection-start-line="2" selection-end-line="2" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test08_acceptrejectedchemistrywitness_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="110" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test09_analyticalexperiment_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="102" lean-forward="true" selection-start-line="2" selection-end-line="2" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test10_conceptexperiment_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="103" selection-start-line="2" selection-end-line="2" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test11_rejectanalyticalwitness_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="101" selection-start-line="2" selection-end-line="2" selection-end-column="111" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test12_analyticalrejectwitness_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="98" selection-start-line="2" selection-end-line="2" selection-end-column="107" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test13_acceptrejectedanalyticalwitness_jane.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="107" selection-start-line="2" selection-end-line="2" selection-end-column="119" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test01_notebook_admin.sh___jb_old___">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="171">
+            <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test07_chemistryrejectwitness_joe.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="96" selection-start-line="2" selection-end-line="2" selection-end-column="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testcases/ELN_test/test01_notebook_all_admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="93" column="20" selection-start-line="93" selection-start-column="16" selection-end-line="93" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test0_running_all_cases.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>

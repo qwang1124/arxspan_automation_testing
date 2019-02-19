@@ -1,4 +1,5 @@
 # Prerequisites
+Python version 3.71+
 Follow this link to install Allure
 https://docs.qameta.io/allure/#_installing_a_commandline
 

@@ -5,9 +5,10 @@ import os
 
 case_path = os.path.join(os.getcwd(), "ELN_test")
 # 报告存放路径
-report_path = os.path.join(os.getcwd(), "report")
+# report_path = os.path.join(os.getcwd(), "report")
 
 
+@allure.testcase('test run all cases')
 def all_case():
     discover = unittest.defaultTestLoader.discover(case_path, pattern="test*.py", top_level_dir=None)
     print(discover)
