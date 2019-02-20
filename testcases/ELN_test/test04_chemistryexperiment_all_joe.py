@@ -34,7 +34,8 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver = joelogin()
         time.sleep(1)
         # Create new chemistry experiment
-        driver.find_element_by_xpath('//*[@id="navMyNotebooks"]/ul/li/a').click()
+        driver.find_element_by_css_selector('#navSharedNotebooks > ul > li:nth-child(1) > a').click()
+        time.sleep(1)
         driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(2)').click()
         time.sleep(2)
         assert driver.find_element_by_id('historyNavLink').is_displayed()
