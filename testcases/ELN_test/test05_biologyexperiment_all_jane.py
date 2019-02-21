@@ -63,6 +63,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         time.sleep(2)
         # Upload the "GeneralFACSprotocol.doc" file
         driver.find_element_by_id('addFile_tab').click()
+        time.sleep(1)
         fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
             'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
@@ -205,3 +206,5 @@ def janelogin():
     select.select_by_visible_text('Model Test Script Company')
     driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
     return driver
+
+
