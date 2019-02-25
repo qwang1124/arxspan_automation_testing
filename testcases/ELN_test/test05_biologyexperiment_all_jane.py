@@ -90,7 +90,6 @@ class TestCreateexperimentJane(unittest.TestCase):
         path = Path('resources\\Alports_Histology.ppt').absolute()
         driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
             .send_keys(str(path))
-        time.sleep(2)
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
@@ -108,14 +107,14 @@ class TestCreateexperimentJane(unittest.TestCase):
         path = Path('resources\\AlportsHistologyAnalysis.pdf').absolute()
         driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
             .send_keys(str(path))
-        time.sleep(2)
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
         assert WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
         time.sleep(2)
         # Upload the "~$Xenograft.xls" file
-        WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('addFile_tab')).click()
+        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "addFile_tab"))).click()
         fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
             'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
@@ -123,27 +122,23 @@ class TestCreateexperimentJane(unittest.TestCase):
         path = Path('resources\\~$Xenograft.xls').absolute()
         driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
             .send_keys(str(path))
-        time.sleep(2)
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
-
-        # download the file
-        element = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
-        driver.execute_script("arguments[0].click();", element)
-        driver.find_elements_by_link_text('Download')[0].click()
-        time.sleep(4)
-
+        time.sleep(3)
+        button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
+        driver.execute_script("arguments[0].click();", button)
+        driver.find_element_by_link_text('Download').click()
+        time.sleep(2)
         # Replace the file
-        driver.find_elements_by_link_text('Replace')[0].click()
-        field = driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0]
+        driver.find_element_by_link_text('Replace').click()
+        field = driver.find_elements_by_xpath('//input[contains(@id, "file1_10")]')[0]
         driver.execute_script("arguments[0].style.display = 'block';", field)
         path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
-        driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0].send_keys(str(path))
-        time.sleep(4)
-        button = driver.find_element_by_xpath('//*[contains(@id, "addFileDiv_9")]/form/section[2]/button')
+        driver.find_elements_by_xpath('//input[contains(@id, "file1_10")]')[0].send_keys(str(path))
+        button = driver.find_element_by_xpath('//*[contains(@id, "addFileDiv_10")]/form/section[2]/button')
         button.submit()
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
@@ -159,9 +154,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         checkbox.click()
         select = Select(driver.find_element_by_id('signStatusBox'))
         select.select_by_visible_text('Sign and Close')
-        time.sleep(2)
         select = Select(driver.find_element_by_id('requesteeIdBox'))
-        time.sleep(2)
         select.select_by_visible_text('Joe Chemist')
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')

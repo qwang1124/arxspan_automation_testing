@@ -18,18 +18,31 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.implicitly_wait(30)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "addFile_tab"))).click()
+        fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
+        driver.execute_script(
+            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
+            fileinput)
+        path = Path('resources\\~$Xenograft.xls').absolute()
+        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
+            .send_keys(str(path))
+        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
+                                                     'section.bottomButtons.buttonAlignedRight > button')
+        button.click()
+        button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
+        button.send_keys(Keys.ENTER)
+        time.sleep(3)
         button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
         driver.execute_script("arguments[0].click();", button)
-        driver.find_elements_by_link_text('Download')[0].click()
-        time.sleep(4)
+        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.LINK_TEXT, "Download"))).click()
+        time.sleep(2)
         # Replace the file
-        driver.find_elements_by_link_text('Replace')[0].click()
-        field = driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0]
+        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.LINK_TEXT, "Replace"))).click()
+        field = driver.find_elements_by_xpath('//input[contains(@id, "file1_10")]')[0]
         driver.execute_script("arguments[0].style.display = 'block';", field)
         path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
-        driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0].send_keys(str(path))
-        time.sleep(4)
-        button = driver.find_element_by_xpath('//*[contains(@id, "addFileDiv_9")]/form/section[2]/button')
+        driver.find_elements_by_xpath('//input[contains(@id, "file1_10")]')[0].send_keys(str(path))
+        button = driver.find_element_by_xpath('//*[contains(@id, "addFileDiv_10")]/form/section[2]/button')
         button.submit()
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)

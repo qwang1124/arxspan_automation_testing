@@ -35,7 +35,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
     @allure.testcase('createexperiment')
     def test1(self):
         driver = joelogin()
-        driver.implicitly_wait(20)
+        driver.implicitly_wait(30)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
 
         # Create new chemistry experiment
@@ -91,7 +91,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         save.send_keys(Keys.ENTER)
 
         # Sign & Close, selecting Jane Biologist as the Witness
-        sign = WebDriverWait(driver, 6).until(ec.visibility_of_element_located((By.ID, "signExperimentButton")))
+        sign = WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "signExperimentButton")))
         driver.execute_script("arguments[0].click();", sign)
         email = driver.find_elements_by_id('signEmail')[0]
         email.send_keys('joe@demo.com')
