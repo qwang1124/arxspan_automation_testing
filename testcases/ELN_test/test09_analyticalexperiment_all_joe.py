@@ -159,14 +159,12 @@ class TestanalyticalexpernimentJoe(unittest.TestCase):
         checkbox = driver.find_element_by_css_selector('#signDiv > form > section.bottomDisclaimer > div > label')
         checkbox.click()
         select = Select(driver.find_element_by_id('requesteeIdBox'))
-        time.sleep(2)
         select.select_by_visible_text('Jane Biologist')
-        time.sleep(1)
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
+        time.sleep(3)
 
         # Log out
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
-        time.sleep(2)
         driver.find_element_by_link_text('Logout').click()
         driver.close()
 

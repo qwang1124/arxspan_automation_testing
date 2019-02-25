@@ -24,12 +24,9 @@ class TestNotebookJoe(unittest.TestCase):
         driver = joelogin()
         driver.implicitly_wait(10)
         driver.find_element_by_link_text('Invitations').click()
-        time.sleep(2)
         driver.find_element_by_css_selector('#SummaryTable > tbody > tr > td.sorting_1 > a').click()
-        time.sleep(2)
         # accept the note book share
         driver.switch_to.window(driver.window_handles[1])
-        # assert driver.find_element_by_xpath('//*[@id="acceptForm"]/input[3]').is_displayed()
         driver.find_element_by_css_selector('#acceptForm > input:nth-child(3)').click()
         driver.close()
 
@@ -37,7 +34,7 @@ class TestNotebookJoe(unittest.TestCase):
 def joelogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
-    driver.maximize_window()
+    # driver.maximize_window()
     driver.find_element_by_id('login-email').send_keys('joe@demo.com')
     driver.find_element_by_id('login-pass').send_keys('carbonCopee')
     driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)

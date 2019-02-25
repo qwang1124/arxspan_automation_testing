@@ -17,6 +17,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support import expected_conditions as ec
+from selenium.webdriver.common.by import By
 import allure
 
 
@@ -26,8 +29,7 @@ class TestWitnessJane(unittest.TestCase):
     def test1(self):
         driver = janelogin()
         # check the witness requests is showing the notification
-        driver.implicitly_wait(10)
-
+        driver.implicitly_wait(20)
         assert driver.find_element_by_id('witnessRequestsHolder').is_displayed()
         time.sleep(2)
         # select the analytical experiment name
@@ -42,12 +44,9 @@ class TestWitnessJane(unittest.TestCase):
         form = driver.find_element_by_id('witnessForm')
         form.click()
         driver.find_element_by_id('witnessSubmitButton').click()
-        time.sleep(2)
         driver.get('https://model.arxspan.com/login.asp')
-        time.sleep(2)
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
-
-        assert driver.find_element_by_id('historyNavLink').is_displayed()
+        assert WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
         time.sleep(2)
         # Log out
         driver.find_element_by_link_text('Logout').click()

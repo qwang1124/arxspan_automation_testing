@@ -32,7 +32,7 @@ class TestWitnessJoe(unittest.TestCase):
     @allure.testcase('witnessjoe')
     def test1(self):
         driver = joelogin()
-        driver.implicitly_wait(30)
+        driver.implicitly_wait(20)
         WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
                                                                                     '/li[1]/a')).click()
         # check the rejection reason is showing
@@ -60,8 +60,8 @@ class TestWitnessJoe(unittest.TestCase):
         checkbox.click()
         select = Select(driver.find_element_by_id('requesteeIdBox'))
         select.select_by_visible_text('Jane Biologist')
-        time.sleep(4)
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
+        time.sleep(3)
 
         # logout
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')

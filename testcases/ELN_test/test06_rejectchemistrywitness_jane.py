@@ -41,6 +41,7 @@ class TestWitnessJane(unittest.TestCase):
         driver.find_element_by_id('reasonBox').send_keys('TESTING')
         # reject the witness request
         driver.find_element_by_id('rejectSubmitButton').click()
+        time.sleep(2)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
         assert WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))

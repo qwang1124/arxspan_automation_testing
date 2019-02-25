@@ -39,7 +39,7 @@ class TestCreateexperimentJane(unittest.TestCase):
     @allure.testcase('createexperiment')
     def test1(self):
         driver = janelogin()
-        driver.implicitly_wait(30)
+        driver.implicitly_wait(20)
 
         # Create new Biologist experiment
         driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
@@ -77,7 +77,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.execute_script("arguments[0].click();", button)
 
         # remove the file
-        driver.find_element_by_class_name('littleButton').click()
+        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "littleButton"))).click()
         driver.find_element_by_class_name('confirm').click()
         time.sleep(2)
 
@@ -133,11 +133,11 @@ class TestCreateexperimentJane(unittest.TestCase):
         # download the file
         element = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
         driver.execute_script("arguments[0].click();", element)
-        driver.find_elements_by_xpath('//*[contains(@id, "file_9")]/td[4]/a[3]')[0].click()
+        driver.find_elements_by_link_text('Download')[0].click()
         time.sleep(4)
-        # Replace the file
-        driver.find_element_by_xpath('//*[contains(@id, "file_9")]/td[4]/a[2]').click()
 
+        # Replace the file
+        driver.find_elements_by_link_text('Replace')[0].click()
         field = driver.find_elements_by_xpath('//input[contains(@id, "file1_9")]')[0]
         driver.execute_script("arguments[0].style.display = 'block';", field)
         path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()

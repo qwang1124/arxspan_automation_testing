@@ -103,12 +103,9 @@ class TestCreateexperimentJoe(unittest.TestCase):
         checkbox = driver.find_element_by_css_selector(
             '#signDiv > form > section.bottomDisclaimer > div > label')
         checkbox.click()
-        time.sleep(2)
         driver.find_element_by_css_selector('#signDivButtons > button:nth-child(1)').click()
+        time.sleep(3)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
-        time.sleep(1)
-        # driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
-        # assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
         # time.sleep(2)
         # logout
         driver.find_element_by_link_text('Logout').click()

@@ -34,7 +34,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
     @allure.testcase('createconceptexperiment')
     def test1(self):
         driver = janelogin()
-        driver.implicitly_wait(30)
+        driver.implicitly_wait(20)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         # Create a new concept experiment
         driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()

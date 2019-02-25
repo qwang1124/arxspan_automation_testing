@@ -92,7 +92,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
 def adminlogin():
     driver = webdriver.Chrome(ChromeDriverManager().install())
     driver.get('https://model.arxspan.com/login.asp')
-    driver.maximize_window()
+    # driver.maximize_window()
     driver.find_element_by_id('login-email').send_keys('admin@demo.com')
     driver.find_element_by_id('login-pass').send_keys('carbonCopee')
     driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
