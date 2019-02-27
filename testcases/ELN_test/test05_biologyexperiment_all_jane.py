@@ -130,10 +130,10 @@ class TestCreateexperimentJane(unittest.TestCase):
         time.sleep(3)
         button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
         driver.execute_script("arguments[0].click();", button)
-        driver.find_element_by_link_text('Download').click()
+        driver.find_elements_by_link_text('Download')[0].click()
         time.sleep(2)
         # Replace the file
-        driver.find_element_by_link_text('Replace').click()
+        driver.find_elements_by_link_text('Replace')[0].click()
         field = driver.find_elements_by_xpath('//input[contains(@id, "file1_10")]')[0]
         driver.execute_script("arguments[0].style.display = 'block';", field)
         path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
