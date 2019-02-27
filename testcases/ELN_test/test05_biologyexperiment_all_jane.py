@@ -42,44 +42,45 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.implicitly_wait(20)
 
         # Create new Biologist experiment
-        driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
-        driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(3)').click()
-        driver.find_element_by_id('e_details').send_keys('TESTING')
-        driver.find_element_by_css_selector('#submitRow > a:nth-child(1)').send_keys(Keys.ENTER)
-        assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
-        time.sleep(2)
-        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
-
-        # Add a new protocol note
-        elm = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[4]
-        elm.click()
-        driver.execute_script("arguments[0].innerText = 'TESTING TESTING'", elm)
-
-        button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
-        button.send_keys(Keys.ENTER)
-        assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
-        time.sleep(2)
+        # driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
+        # driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(3)').click()
+        # driver.find_element_by_id('e_details').send_keys('TESTING')
+        # driver.find_element_by_css_selector('#submitRow > a:nth-child(1)').send_keys(Keys.ENTER)
+        # assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
+        # time.sleep(2)
+        # driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        #
+        # # Add a new protocol note
+        # elm = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[4]
+        # elm.click()
+        # driver.execute_script("arguments[0].innerText = 'TESTING TESTING'", elm)
+        #
+        # button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
+        # button.send_keys(Keys.ENTER)
+        # assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
+        # time.sleep(2)
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
 
         # Upload the "GeneralFACSprotocol.doc" file
-        driver.find_element_by_id('addFile_tab').click()
-        fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
-        driver.execute_script(
-            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
-            fileinput)
-        path = Path('resources\\GeneralFACSprotocol.doc').absolute()
-        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
-            .send_keys(str(path))
-        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
-                                                     'section.bottomButtons.buttonAlignedRight > button')
-        button.click()
-        button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
-        driver.execute_script("arguments[0].click();", button)
-
-        # remove the file
-        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "littleButton"))).click()
-        driver.find_element_by_class_name('confirm').click()
-        time.sleep(2)
+        # driver.find_element_by_id('addFile_tab').click()
+        # fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
+        # driver.execute_script(
+        #     'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
+        #     fileinput)
+        # path = Path('resources\\GeneralFACSprotocol.doc').absolute()
+        # driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
+        #     .send_keys(str(path))
+        # button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
+        #                                              'section.bottomButtons.buttonAlignedRight > button')
+        # button.click()
+        # button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
+        # driver.execute_script("arguments[0].click();", button)
+        #
+        # # remove the file
+        # WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "littleButton"))).click()
+        # time.sleep(2)
+        # driver.find_element_by_class_name('confirm').click()
+        # time.sleep(3)
 
         # Upload the "Alports_Histology.ppt" file
         driver.find_element_by_id('addFile_tab').click()
@@ -90,9 +91,11 @@ class TestCreateexperimentJane(unittest.TestCase):
         path = Path('resources\\Alports_Histology.ppt').absolute()
         driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
             .send_keys(str(path))
+        time.sleep(1)
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
+        time.sleep(2)
         assert WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
         driver.get('https://model.arxspan.com/login.asp')
         WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
@@ -131,6 +134,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
         driver.execute_script("arguments[0].click();", button)
         driver.find_elements_by_link_text('Download')[0].click()
+
         time.sleep(2)
         # Replace the file
         driver.find_elements_by_link_text('Replace')[0].click()
