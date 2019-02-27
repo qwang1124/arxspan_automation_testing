@@ -15,6 +15,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 import unittest, time, re, os
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.support.wait import WebDriverWait
 import allure
 
 
@@ -24,7 +25,8 @@ class TestNotebookJane(unittest.TestCase):
         driver = janelogin()
         driver.implicitly_wait(10)
         driver.find_element_by_link_text('Invitations').click()
-        driver.find_element_by_xpath('//*[@id="SummaryTable"]/tbody/tr/td[1]/a').click()
+        WebDriverWait(driver, 6).until(lambda driver: driver.find_element_by_xpath('//*[@id="SummaryTable"]/tbody/tr'
+                                                                                   '/td[1]/a')).click()
         # accept the note book share
         driver.switch_to.window(driver.window_handles[1])
         driver.find_element_by_css_selector('#acceptForm > input:nth-child(3)').click()
