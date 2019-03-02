@@ -1,0 +1,7 @@
+
+Checking for mac64 chromedriver:2.46 in cache
+There is no cached driver. Downloading new one...
+Trying to download new driver from http://chromedriver.storage.googleapis.com/2.46/chromedriver_mac64.zip
+Unpack archive /Users/stephenchen/.wdm/chromedriver/2.46/mac64/chromedriver.zip
+Test_Note_book_QW
+System Administrator
