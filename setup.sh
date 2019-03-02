@@ -9,5 +9,3 @@ echo "install install pytest"
 pip3 install pytest
 echo "install allure pytest"
 pip3 install allure-pytest
-echo "running test case"
-./test01_notebook_admin.sh
