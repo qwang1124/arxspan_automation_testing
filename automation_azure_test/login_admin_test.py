@@ -13,16 +13,21 @@
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.chrome.options import Options  
 import unittest, time, re, os
 from webdriver_manager.chrome import ChromeDriverManager
 
 class LoginTestAdmin(unittest.TestCase):
     def setUp(self):
         
+        chrome_options = Options()  
+        chrome_options.add_argument('--no-sandbox')
+        chrome_options.add_argument("--headless")  
+        chrome_options.add_argument('--disable-gpu')
         if os.name == 'nt':
-            self.driver = webdriver.Chrome(ChromeDriverManager().install())
-        if os.name == 'posix':
-            self.driver = webdriver.Chrome('/usr/bin/chromedriver')
+            self.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
+        else:
+            self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
 
         self.driver.implicitly_wait(3)
         self.base_url = "https://model.arxspan.com/login.asp"
