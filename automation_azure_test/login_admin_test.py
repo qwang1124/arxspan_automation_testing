@@ -27,7 +27,7 @@ class LoginTestAdmin(unittest.TestCase):
         if os.name == 'nt':
             self.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
         else:
-            self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
+            self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=chrome_options)
 
         self.driver.implicitly_wait(3)
         self.base_url = "https://model.arxspan.com/login.asp"
