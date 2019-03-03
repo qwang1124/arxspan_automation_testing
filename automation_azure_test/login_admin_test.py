@@ -22,8 +22,6 @@ class LoginTestAdmin(unittest.TestCase):
         if os.name == 'nt':
             self.driver = webdriver.Chrome(ChromeDriverManager().install())
         if os.name == 'posix':
-            self.driver = webdriver.Chrome('/usr/local/bin/chromedriver')
-        else:
             self.driver = webdriver.Chrome('/usr/bin/chromedriver')
 
         self.driver.implicitly_wait(3)
