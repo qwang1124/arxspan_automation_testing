@@ -15,6 +15,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.chrome.options import Options  
 import unittest, time, re, os
+import platform
 from webdriver_manager.chrome import ChromeDriverManager
 
 class LoginTestAdmin(unittest.TestCase):
@@ -24,8 +25,10 @@ class LoginTestAdmin(unittest.TestCase):
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument("--headless")  
         chrome_options.add_argument('--disable-gpu')
-        if os.name == 'nt':
+        if platform.system() == 'Windows':
             self.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
+        elif platform.system() == "Darwin":
+            self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
         else:
             self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=chrome_options)
 
