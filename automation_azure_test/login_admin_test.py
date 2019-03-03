@@ -16,10 +16,16 @@ from selenium.webdriver.support.ui import Select
 import unittest, time, re, os
 from webdriver_manager.chrome import ChromeDriverManager
 
-
 class LoginTestAdmin(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        
+        if os.name == 'nt':
+            self.driver = webdriver.Chrome(ChromeDriverManager().install())
+        if os.name == 'posix':
+            self.driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+        else:
+            self.driver = webdriver.Chrome('/usr/bin/chromedriver')
+
         self.driver.implicitly_wait(3)
         self.base_url = "https://model.arxspan.com/login.asp"
         self.verificationErrors = []
