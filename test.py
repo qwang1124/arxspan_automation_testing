@@ -9,54 +9,54 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
 import allure
 from pathlib import Path
+import json
+import requests
+import pickle
 
 
-class TestCreateexperimentJane(unittest.TestCase):
-
-    def test1(self):
-        driver = janelogin()
-        driver.implicitly_wait(30)
-        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
-        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
-        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "addFile_tab"))).click()
-        fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
-        driver.execute_script(
-            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
-            fileinput)
-        path = Path('resources\\~$Xenograft.xls').absolute()
-        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
-            .send_keys(str(path))
-        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
-                                                     'section.bottomButtons.buttonAlignedRight > button')
-        button.click()
-        button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
-        button.send_keys(Keys.ENTER)
-        time.sleep(3)
-        button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
-        driver.execute_script("arguments[0].click();", button)
-        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.LINK_TEXT, "Download"))).click()
-        time.sleep(2)
-        # Replace the file
-        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.LINK_TEXT, "Replace"))).click()
-        field = driver.find_elements_by_xpath('//input[contains(@id, "file1_10")]')[0]
-        driver.execute_script("arguments[0].style.display = 'block';", field)
-        path = Path('resources\\InventoryBulkUpdate.xlsx').absolute()
-        driver.find_elements_by_xpath('//input[contains(@id, "file1_10")]')[0].send_keys(str(path))
-        button = driver.find_element_by_xpath('//*[contains(@id, "addFileDiv_10")]/form/section[2]/button')
-        button.submit()
-        button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
-        button.send_keys(Keys.ENTER)
+def save_cookie(driver, path):
+    with open(path, 'wb') as filehandler:
+        pickle.dump(driver.get_cookies(), filehandler)
 
 
-def janelogin():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get('https://model.arxspan.com/login.asp')
-    # driver.maximize_window()
-    driver.find_element_by_id('login-email').send_keys('jane@demo.com')
-    driver.find_element_by_id('login-pass').send_keys('carbonCopee')
-    driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
-    time.sleep(1)
-    select = Select(driver.find_element_by_tag_name('select'))
-    select.select_by_visible_text('Model Test Script Company')
-    driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
-    return driver
+def load_cookie(driver, path):
+     with open(path, 'rb') as cookiesfile:
+         cookies = pickle.load(cookiesfile)
+         for cookie in cookies:
+             driver.add_cookie(cookie)
+
+# cookies = pickle.load(open('cookie.txt', 'w'))
+#
+# s = requests.Session()
+# for cookie in cookies:
+#     s.cookies.set(cookie['name'], cookie['value'])
+# response = s.get("https://model.arxspan.com/login.asp")
+# bodyStr = response.text
+
+
+# driver = webdriver.Chrome(ChromeDriverManager().install())
+# driver.get('https://model.arxspan.com/login.asp')
+# f1 = open('cookieadmin.txt')
+# cookie = f1.read()
+# cookie = json.loads(cookie)
+# for c in cookie:
+#     driver.add_cookie(c)
+# driver.refresh()
+# driver.find_element_by_id('login-email').send_keys('admin@demo.com')
+# driver.find_element_by_id('login-pass').send_keys('carbonCopee')
+# driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
+# time.sleep(1)
+# select = Select(driver.find_element_by_tag_name('select'))
+# select.select_by_visible_text('Model Test Script Company')
+# driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
+#
+# cookies = driver.get_cookies()
+# print(type(cookies))
+# # print ("".join(cookies))
+# f1 = open('cookieadmin.txt', 'w')
+# f1.write(json.dumps(cookies))
+# f1.close
+
+
+
+

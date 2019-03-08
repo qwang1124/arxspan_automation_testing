@@ -21,13 +21,21 @@ import allure
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
+import json
 
 
 class TestCreatenotebookAdmin(unittest.TestCase):
 
     @allure.testcase('test create notebook by Admin')
     def test1(self):
-        driver = adminlogin()
+        driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver.get('https://model.arxspan.com/login.asp')
+        f1 = open('cookieadmin.txt')
+        cookie = f1.read()
+        cookie = json.loads(cookie)
+        for c in cookie:
+            driver.add_cookie(c)
+        driver.refresh()
         # create notebook by admin
         driver.find_element_by_id('createNewNotebookLeftNavButton').click()
         driver.find_element_by_id('notebookName').send_keys('Test_Note_book_QW')

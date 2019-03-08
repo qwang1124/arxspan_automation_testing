@@ -32,13 +32,22 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
 import allure
 from pathlib import Path
+import json
 
 
 class TestCreateexperimentJane(unittest.TestCase):
 
     @allure.testcase('createexperiment')
     def test1(self):
-        driver = janelogin()
+        driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver.get('https://model.arxspan.com/login.asp')
+        # driver.maximize_window()
+        f1 = open('cookiejane.txt')
+        cookie = f1.read()
+        cookie = json.loads(cookie)
+        for c in cookie:
+            driver.add_cookie(c)
+        driver.refresh()
         driver.implicitly_wait(20)
 
         # Create new Biologist experiment
@@ -73,14 +82,14 @@ class TestCreateexperimentJane(unittest.TestCase):
         # button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
         #                                              'section.bottomButtons.buttonAlignedRight > button')
         # button.click()
-        # button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
-        # driver.execute_script("arguments[0].click();", button)
+        button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
+        driver.execute_script("arguments[0].click();", button)
         #
         # # remove the file
-        # WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "littleButton"))).click()
-        # time.sleep(2)
-        # driver.find_element_by_class_name('confirm').click()
-        # time.sleep(3)
+        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "littleButton"))).click()
+        time.sleep(2)
+        driver.find_element_by_class_name('confirm').click()
+        time.sleep(3)
 
         # Upload the "Alports_Histology.ppt" file
         driver.find_element_by_id('addFile_tab').click()
@@ -169,15 +178,4 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.close()
 
 
-def janelogin():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get('https://model.arxspan.com/login.asp')
-    # driver.maximize_window()
-    driver.find_element_by_id('login-email').send_keys('jane@demo.com')
-    driver.find_element_by_id('login-pass').send_keys('carbonCopee')
-    driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
-    time.sleep(1)
-    select = Select(driver.find_element_by_tag_name('select'))
-    select.select_by_visible_text('Model Test Script Company')
-    driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
-    return driver
+

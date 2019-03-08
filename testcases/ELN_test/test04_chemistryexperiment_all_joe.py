@@ -29,12 +29,20 @@ from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.common.by import By
 import allure
 from pathlib import Path
+import json
 
 
 class TestCreateexperimentJoe(unittest.TestCase):
     @allure.testcase('createexperiment')
     def test1(self):
-        driver = joelogin()
+        driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver.get('https://model.arxspan.com/login.asp')
+        f1 = open('cookiejoe.txt')
+        cookie = f1.read()
+        cookie = json.loads(cookie)
+        for c in cookie:
+            driver.add_cookie(c)
+        driver.refresh()
         driver.implicitly_wait(30)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
 
