@@ -71,22 +71,23 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
 
         # Upload the "GeneralFACSprotocol.doc" file
-        # driver.find_element_by_id('addFile_tab').click()
-        # fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
-        # driver.execute_script(
-        #     'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
-        #     fileinput)
-        # path = Path('resources\\GeneralFACSprotocol.doc').absolute()
-        # driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
-        #     .send_keys(str(path))
-        # button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
-        #                                              'section.bottomButtons.buttonAlignedRight > button')
-        # button.click()
+        driver.find_element_by_id('addFile_tab').click()
+        fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
+        driver.execute_script(
+            'arguments[0].style = ""; arguments[0].style.display = "block"; arguments[0].style.visibility = "visible";',
+            fileinput)
+        path = Path('resources\\GeneralFACSprotocol.doc').absolute()
+        driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
+            .send_keys(str(path))
+        button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
+                                                     'section.bottomButtons.buttonAlignedRight > button')
+        button.click()
         button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
         driver.execute_script("arguments[0].click();", button)
         #
         # # remove the file
-        WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "littleButton"))).click()
+        remove = WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.CLASS_NAME, "littleButton")))
+        driver.execute_script("arguments[0].click();", remove)
         time.sleep(2)
         driver.find_element_by_class_name('confirm').click()
         time.sleep(3)
@@ -100,13 +101,13 @@ class TestCreateexperimentJane(unittest.TestCase):
         path = Path('resources\\Alports_Histology.ppt').absolute()
         driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
             .send_keys(str(path))
-        time.sleep(1)
+        time.sleep(2)
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
-        time.sleep(2)
+        time.sleep(3)
         assert WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
-        driver.get('https://model.arxspan.com/login.asp')
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
         WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
                                                                                     '/li[1]/a')).click()
 
@@ -119,13 +120,17 @@ class TestCreateexperimentJane(unittest.TestCase):
         path = Path('resources\\AlportsHistologyAnalysis.pdf').absolute()
         driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]') \
             .send_keys(str(path))
+        time.sleep(2)
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
+        time.sleep(3)
         assert WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
-        time.sleep(2)
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+
         # Upload the "~$Xenograft.xls" file
-        driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
+        WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
+                                                                                    '/li[1]/a')).click()
         WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "addFile_tab"))).click()
         fileinput = driver.find_element_by_css_selector('#fileInputContainer > div > input[type="file"]')
         driver.execute_script(
@@ -140,10 +145,11 @@ class TestCreateexperimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
         time.sleep(3)
+        # Download
         button = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
         driver.execute_script("arguments[0].click();", button)
-        driver.find_elements_by_link_text('Download')[0].click()
-
+        download = driver.find_elements_by_link_text('Download')[0]
+        driver.execute_script("arguments[0].click();", download)
         time.sleep(2)
         # Replace the file
         driver.find_elements_by_link_text('Replace')[0].click()

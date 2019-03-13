@@ -44,11 +44,10 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
         assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
-        time.sleep(2)
-        elm = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments'
-                                                                                          '"]/ul '
-                                                                                          '/li[1]/a'))
-        driver.execute_script("arguments[0].click();", elm)
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+        WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
+                                                                                    '/li[1]/a')).click()
+
         # Upload the "nmrketalreduction21H.txt" file
         WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('addFile_tab')).click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
@@ -62,17 +61,16 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
+        time.sleep(3)
         element = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('attachmentTable_tab'))
         driver.execute_script("arguments[0].click();", element)
 
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
         assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
-        time.sleep(2)
-        elm = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments'
-                                                                                          '"]/ul '
-                                                                                          '/li[1]/a'))
-        driver.execute_script("arguments[0].click();", elm)
+        driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
+        WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
+                                                                                    '/li[1]/a')).click()
         # Upload the "GeneralFACSprotocol.doc" file
         WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_id('addFile_tab')).click()
         fileinput = driver.find_elements_by_css_selector('#fileInputContainer > div > input[type="file"]')
@@ -86,11 +84,11 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#resumableBrowserHolder > '
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
+        time.sleep(3)
         # add a new note to the experiment
-        elm = WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments'
-                                                                                          '"]/ul '
-                                                                                          '/li[1]/a'))
-        driver.execute_script("arguments[0].click();", elm)
+        driver.get('https://model.arxspan.com/login.asp')
+        WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
+                                                                                    '/li[1]/a')).click()
         driver.find_element_by_id('addNoteButton').click()
         text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[4]
 
@@ -100,6 +98,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
         assert WebDriverWait(driver, 5).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
+        time.sleep(2)
 
         # Sign & Close, selecting Joe Chemistry as the Witness
         sign = WebDriverWait(driver, 6).until(ec.visibility_of_element_located((By.ID, "signExperimentButton")))

@@ -16,13 +16,55 @@ from selenium.webdriver.support.ui import Select
 import unittest, time, re, os
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.webdriver.support.wait import WebDriverWait
-import allure
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.chrome.options import Options
+import platform
+import json
 
 
 class TestNotebookJane(unittest.TestCase):
-    @allure.testcase('test share test_admin acceptation')
+    # def setUp(self):
+    #     chrome_options = Options()
+    #     chrome_options.add_argument('--no-sandbox')
+    #     chrome_options.add_argument("--headless")
+    #     chrome_options.add_argument('--disable-gpu')
+    #     if platform.system() == 'Windows':
+    #         self.driver = webdriver.Chrome(ChromeDriverManager().install(), chrome_options=chrome_options)
+    #     elif platform.system() == "Darwin":
+    #         self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
+    #     else:
+    #         self.driver = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=chrome_options)
+    #
+    #     self.driver.implicitly_wait(3)
+    #     self.base_url = "https://model.arxspan.com/login.asp"
+    #     self.verificationErrors = []
+    #     self.accept_next_alert = True
+
     def test1(self):
-        driver = janelogin()
+        driver = webdriver.Chrome(ChromeDriverManager().install())
+        driver.get('https://model.arxspan.com/login.asp')
+
+        driver.find_element_by_id('login-email').send_keys('jane@demo.com')
+        driver.find_element_by_id('login-pass').send_keys('carbonCopee')
+        driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
+        time.sleep(1)
+        select = Select(driver.find_element_by_tag_name('select'))
+        select.select_by_visible_text('Model Test Script Company')
+        driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
+
+        cookies = driver.get_cookies()
+        print(type(cookies))
+        # print ("".join(cookies))
+        f1 = open('cookiejane.txt', 'w')
+        f1.write(json.dumps(cookies))
+        f1.close
+
+        f1 = open('cookiejane.txt')
+        cookie = f1.read()
+        cookie = json.loads(cookie)
+        for c in cookie:
+            driver.add_cookie(c)
+        driver.refresh()
         driver.implicitly_wait(10)
         driver.find_element_by_link_text('Invitations').click()
         WebDriverWait(driver, 6).until(lambda driver: driver.find_element_by_xpath('//*[@id="SummaryTable"]/tbody/tr'
@@ -33,14 +75,6 @@ class TestNotebookJane(unittest.TestCase):
         driver.close()
 
 
-def janelogin():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get('https://model.arxspan.com/login.asp')
-    # driver.maximize_window()
-    driver.find_element_by_id('login-email').send_keys('jane@demo.com')
-    driver.find_element_by_id('login-pass').send_keys('carbonCopee')
-    driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
-    select = Select(driver.find_element_by_tag_name('select'))
-    select.select_by_visible_text('Model Test Script Company')
-    driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
-    return driver
+
+
+
