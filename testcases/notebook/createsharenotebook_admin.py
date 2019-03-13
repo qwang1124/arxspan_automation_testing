@@ -19,24 +19,6 @@ class TestCreatenotebookAdmin(unittest.TestCase):
         driver.find_element_by_name('notebookDescription').send_keys('Test Script execution-01/01/2019')
         driver.find_element_by_name('createNotebook').click()
 
-        test_value = driver.find_element_by_id('NotebookTitle').text
-        print(test_value)
-        a = 'Test_Notebook_Q'
-        test_value2 = driver.find_element_by_id('notebookOwnerSpan').text
-        b = 'System Administrator'
-        test_value3 =driver.find_element_by_id('notebookDescription').text
-        print(test_value2)
-        c = 'Test Script execution-01/01/2019'
-
-        if a in test_value and b in test_value2 and c in test_value3:
-            valid = True
-        else:
-            valid = False
-            picture_name = 'testcreateNotebookAdmin_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
-            driver.get_screenshot_as_file(picture_name)
-        self.assertTrue(valid)
-        driver.close()
-
     @allure.testcase('test share test_admin to Joe')
     def testsharenotebookjoe(self):
         driver = testadminlogin()
