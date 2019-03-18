@@ -73,11 +73,10 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
 
         # Create new chemistry experiment
-        driver.find_element_by_xpath('//*[@id="navMyNotebooks"]/ul/li/a').click()
-        driver.find_element_by_css_selector(
-            '#pageContentTD > div > div.createExperimentDiv > a:nth-child(2)').click()
-        assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
-        driver.close()
+        driver.find_element_by_id('createNewNotebookLeftNavButton').click()
+        driver.find_element_by_id('notebookName').send_keys('Test_Note_book_QW')
+        driver.find_element_by_name('notebookDescription').send_keys('Test Script execution-01/01/2019')
+        driver.find_element_by_name('createNotebook').click()
 
         test_value = driver.find_element_by_id('NotebookTitle').text
         print(test_value)
@@ -95,10 +94,11 @@ class TestCreateexperimentJoe(unittest.TestCase):
             picture_name = 'testcreateNotebookAdmin_' + str(time.strftime('%Y%m%d%H%M%S')) + ' .png'
             driver.get_screenshot_as_file(picture_name)
         self.assertTrue(valid)
+        driver.close()
 
         # Share notebook with Joe Chemistry
         driver.find_element_by_id('shareNotebookLink').click()
-        driver.find_element_by_class_name('groupSelectLink').click()
+        driver.find_element_by_id('expandGroupLink-0').click()
         driver.find_element_by_id('listGroupCheckUser-1786').click()
         driver.find_element_by_xpath('//*[@id="groupsDiv"]/div[3]/input').click()
         driver.find_element_by_id('canRead').click()
@@ -112,7 +112,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         # Share test_admin with Jane Biologist
         time.sleep(1)
         driver.find_element_by_id('shareNotebookLink').click()
-        driver.find_element_by_class_name('groupSelectLink').click()
+        driver.find_element_by_id('expandGroupLink-0').click()
         driver.find_element_by_id('listGroupCheckUser-1787').click()
         driver.find_element_by_xpath('//*[@id="groupsDiv"]/div[3]/input').click()
 
@@ -134,15 +134,5 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.close()
 
 
-def adminlogin():
-    driver = webdriver.Chrome(ChromeDriverManager().install())
-    driver.get('https://model.arxspan.com/login.asp')
-    # driver.maximize_window()
-    driver.find_element_by_id('login-email').send_keys('admin@demo.com')
-    driver.find_element_by_id('login-pass').send_keys('carbonCopee')
-    driver.find_element_by_id('login-submit').send_keys(Keys.RETURN)
-    select = Select(driver.find_element_by_tag_name('select'))
-    select.select_by_visible_text('Model Test Script Company')
-    driver.find_element_by_id('login-submit').send_keys(Keys.ENTER)
-    return driver
+
 
