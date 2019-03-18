@@ -1,17 +1,17 @@
 # Test ID: testELN-09
-# Test name: Create analytical experiment by Joe and upload files and send witness request to Jane Test
+# Test name: Create analytical biology_concept_experiments by Joe and upload files and send witness request to Jane Test
 # Expect output:
-#      1. Create a new analytical experiment;
-#      2. Add a new note to the experiment;
-#      3. Successful uploading, removing, downloading, replacing several kinds of files to the experiment;
+#      1. Create a new analytical biology_concept_experiments;
+#      2. Add a new note to the biology_concept_experiments;
+#      3. Successful uploading, removing, downloading, replacing several kinds of files to the biology_concept_experiments;
 #      4. Sign and send the witness request to Jane;
 # Step description:
 #      1. Open the Chrome driver;
 #      2. Login Joe as the user;
 #      3. Choose 'Model Test Script Company' as the company ;
-#      4. Select the most recent notebook;
-#      5. Create a new analytical experiment;
-#      6. Add a new note to the experiment;
+#      4. Select the most recent notebooks;
+#      5. Create a new analytical biology_concept_experiments;
+#      6. Add a new note to the biology_concept_experiments;
 #      7. Upload the "PushTestingProtocolforELN.docx";
 #      8. Remove the "PushTestingProtocolforELN.docx";
 #      9. Upload the "AlportsHistologyAnalysis.pdf";
@@ -42,7 +42,7 @@ class TestanalyticalexpernimentJoe(unittest.TestCase):
         # Select the recently note book
         driver.find_element_by_xpath('//*[@id="navMyNotebooks"]/ul/li/a').click()
 
-        # Select to create a new analytical experiment
+        # Select to create a new analytical biology_concept_experiments
         button = driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(5)')
         button.click()
 

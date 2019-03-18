@@ -72,7 +72,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.implicitly_wait(20)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
 
-        # Create new chemistry experiment
+        # Create new chemistry biology_concept_experiments
         driver.find_element_by_id('createNewNotebookLeftNavButton').click()
         driver.find_element_by_id('notebookName').send_keys('Test_Note_book_QW')
         driver.find_element_by_name('notebookDescription').send_keys('Test Script execution-01/01/2019')
@@ -96,7 +96,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         self.assertTrue(valid)
         driver.close()
 
-        # Share notebook with Joe Chemistry
+        # Share notebooks with Joe Chemistry
         driver.find_element_by_id('shareNotebookLink').click()
         driver.find_element_by_id('expandGroupLink-0').click()
         driver.find_element_by_id('listGroupCheckUser-1786').click()

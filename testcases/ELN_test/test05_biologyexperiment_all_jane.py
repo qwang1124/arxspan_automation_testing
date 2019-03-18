@@ -1,17 +1,17 @@
 # Test ID: testELN-05
-# Test name: Create Biologist experiment by Jane and upload files and send witness request to Joe Test
+# Test name: Create Biologist biology_concept_experiments by Jane and upload files and send witness request to Joe Test
 # Expect output:
-#      1. Create a new Biologist experiment;
-#      2. Add a new protocol note to the experiment;
-#      3. Successful uploading, removing, downloading, replacing several kinds of files to the experiment;
+#      1. Create a new Biologist biology_concept_experiments;
+#      2. Add a new protocol note to the biology_concept_experiments;
+#      3. Successful uploading, removing, downloading, replacing several kinds of files to the biology_concept_experiments;
 #      4. Sign and send the witness request to Joe;
 # Step description:
 #      1. Open the Chrome driver;
 #      2. Login Jane as the user;
 #      3. Choose 'Model Test Script Company' as the company ;
-#      4. Select the most recent notebook;
-#      5. Create a new Biologist experiment;
-#      6. Add a new protocol note to the experiment;
+#      4. Select the most recent notebooks;
+#      5. Create a new Biologist biology_concept_experiments;
+#      6. Add a new protocol note to the biology_concept_experiments;
 #      7. Upload the "GeneralFACSprotocol.doc";
 #      8. Remove the "GeneralFACSprotocol.doc";
 #      9. Upload the "Alports_Histology.ppt";
@@ -50,7 +50,7 @@ class TestCreateexperimentJane(unittest.TestCase):
         driver.refresh()
         driver.implicitly_wait(20)
 
-        # Create new Biologist experiment
+        # Create new Biologist biology_concept_experiments
         # driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
         # driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(3)').click()
         # driver.find_element_by_id('e_details').send_keys('TESTING')

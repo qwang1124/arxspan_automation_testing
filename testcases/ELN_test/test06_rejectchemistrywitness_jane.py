@@ -1,5 +1,5 @@
 # Test ID: testELN-06
-# Test name: Jane has reject the chemistry experiment witness request by Joe Test
+# Test name: Jane has reject the chemistry biology_concept_experiments witness request by Joe Test
 # Expect output:
 #      1. Check received witness request from Joe is showing ;
 #      2. Add a new note;
@@ -9,7 +9,7 @@
 #      2. Login Jane as the user;
 #      3. Choose 'Model Test Script Company' as the company ;
 #      4. Check the witness request is showing the notification;
-#      5. Select the analytical experiment name which shared by Joe;
+#      5. Select the analytical biology_concept_experiments name which shared by Joe;
 #      6. Add a new note;
 #      7. Reject the witness request
 #      8. Log out.
@@ -33,7 +33,7 @@ class TestWitnessJane(unittest.TestCase):
         driver.implicitly_wait(20)
         # check the witness requests is showing the notification
         assert driver.find_element_by_id('witnessRequestsHolder').is_displayed()
-        # select the analytical experiment name
+        # select the analytical biology_concept_experiments name
         driver.find_element_by_xpath('//*[@id="witnessRequestsHolder"]/div/div[2]/table/tbody/tr[1]/td[2]/a').click()
         button = driver.find_element_by_css_selector('#witnessButtons > a:nth-child(2)')
         button.click()

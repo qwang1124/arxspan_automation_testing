@@ -1,21 +1,21 @@
 # Test ID: testELN-04
-# Test name: Create chemistry experiment by Joe and upload files and send witness request to Joe Test
+# Test name: Create chemistry biology_concept_experiments by Joe and upload files and send witness request to Joe Test
 # Expect output:
-#      1. Create a new Biologist experiment;
-#      2. Add a new note to the experiment;
-#      3. Upload a new reaction to the experiment;
-#      4. Successful uploading, removing, downloading, replacing several kinds of files to the experiment;
+#      1. Create a new Biologist biology_concept_experiments;
+#      2. Add a new note to the biology_concept_experiments;
+#      3. Upload a new reaction to the biology_concept_experiments;
+#      4. Successful uploading, removing, downloading, replacing several kinds of files to the biology_concept_experiments;
 #      5. Sign and send the witness request to Jane;
 # Step description:
 #      1. Open the Chrome driver;
 #      2. Login Joe as the user;
 #      3. Choose 'Model Test Script Company' as the company ;
-#      4. Select the most recent notebook;
-#      5. Create a new chemistry experiment;
-#      6. Add a new note to the experiment;
+#      4. Select the most recent notebooks;
+#      5. Create a new chemistry biology_concept_experiments;
+#      6. Add a new note to the biology_concept_experiments;
 #      7. Upload the reaction;
 #      8. Upload the "nmrketalreduction21H.txt";
-#      9. Add a new note toe the experiment;
+#      9. Add a new note toe the biology_concept_experiments;
 #     10. Sign & Close, selecting Jane Biologist as the Witness;
 #     11. Log out.
 import time
@@ -46,13 +46,13 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.implicitly_wait(30)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
 
-        # Create new chemistry experiment
+        # Create new chemistry biology_concept_experiments
         driver.find_element_by_xpath('//*[@id="navMyNotebooks"]/ul/li/a').click()
         driver.find_element_by_css_selector(
             '#pageContentTD > div > div.createExperimentDiv > a:nth-child(2)').click()
         assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
 
-        # add a new note to the experiment
+        # add a new note to the biology_concept_experiments
         driver.find_element_by_id('addNoteButton').click()
         text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[5]
         driver.execute_script("arguments[0].innerHTML='<p>this is test</p>'", text)
@@ -90,7 +90,7 @@ class TestCreateexperimentJoe(unittest.TestCase):
         driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul/li[1]/a').click()
         assert WebDriverWait(driver, 10).until(ec.visibility_of_element_located((By.ID, "historyNavLink")))
 
-        # add a new note to the experiment
+        # add a new note to the biology_concept_experiments
         driver.find_element_by_id('addNoteButton').click()
         text = driver.find_elements_by_css_selector('[class="cke_contents cke_reset"]')[5]
         driver.execute_script("arguments[0].innerHTML='<p>this is test</p>'", text)

@@ -1,17 +1,17 @@
 # Test ID: testELN-010
-# Test name: Create Concept experiment by Joe and upload files and send witness request to Joe Test
+# Test name: Create Concept biology_concept_experiments by Joe and upload files and send witness request to Joe Test
 # Expect output:
-#      1. Create a new Concept experiment;
-#      2. Successful uploading, removing, downloading, replacing several kinds of files to the experiment;
+#      1. Create a new Concept biology_concept_experiments;
+#      2. Successful uploading, removing, downloading, replacing several kinds of files to the biology_concept_experiments;
 #      3. Add a new note to the upload file;
-#      4. Add a new note to the experiment;
+#      4. Add a new note to the biology_concept_experiments;
 #      4. Sign and send the witness request to Joe;
 # Step description:
 #      1. Open the Chrome driver;
 #      2. Login Jane as the user;
 #      3. Choose 'Model Test Script Company' as the company ;
-#      4. Select the most recent notebook;
-#      5. Create a new concept experiment;
+#      4. Select the most recent notebooks;
+#      5. Create a new concept biology_concept_experiments;
 #      7. Upload the "nmrketalreduction21H.txt";
 #      8. Upload the "GeneralFACSprotocol.doc";
 #      9. Add a new note to the file;
@@ -36,10 +36,10 @@ class TestcoceptexpernimentJane(unittest.TestCase):
         driver = janelogin()
         driver.implicitly_wait(20)
         driver.get('https://model.arxspan.com/arxlab/dashboard.asp')
-        # Create a new concept experiment
+        # Create a new concept biology_concept_experiments
         driver.find_element_by_xpath('//*[@id="navSharedNotebooks"]/ul/li[1]/a').click()
         driver.find_element_by_css_selector('#pageContentTD > div > div.createExperimentDiv > a:nth-child(4)').click()
-        # Add the description to the experiment
+        # Add the description to the biology_concept_experiments
         driver.find_element_by_id('e_details').send_keys('TESTING')
         button = driver.find_element_by_css_selector('#submitRow > a:nth-child(1)')
         button.send_keys(Keys.ENTER)
@@ -85,7 +85,7 @@ class TestcoceptexpernimentJane(unittest.TestCase):
                                                      'section.bottomButtons.buttonAlignedRight > button')
         button.click()
         time.sleep(3)
-        # add a new note to the experiment
+        # add a new note to the biology_concept_experiments
         driver.get('https://model.arxspan.com/login.asp')
         WebDriverWait(driver, 10).until(lambda driver: driver.find_element_by_xpath('//*[@id="navMyExperiments"]/ul'
                                                                                     '/li[1]/a')).click()

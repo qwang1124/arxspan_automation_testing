@@ -1,5 +1,5 @@
 # Test ID: testELN-08
-# Test name: Jane has accept the chemistry experiment witness request by Joe Test
+# Test name: Jane has accept the chemistry biology_concept_experiments witness request by Joe Test
 # Expect output:
 #      1. Check received witness request from Joe is showing ;
 #      2. Successful accept witness request send by Joe;
@@ -8,7 +8,7 @@
 #      2. Login Jane as the user;
 #      3. Choose 'Model Test Script Company' as the company ;
 #      4. Check the witness request is showing the notification;
-#      5. Select the chemistry experiment name which shared by Joe;
+#      5. Select the chemistry biology_concept_experiments name which shared by Joe;
 #      6. Accept the witness request
 #      7. Log out.
 import time
@@ -31,7 +31,7 @@ class TestWitnessJane(unittest.TestCase):
         # check the witness requests is showing the notification
         driver.implicitly_wait(20)
         assert driver.find_element_by_id('witnessRequestsHolder').is_displayed()
-        # select the analytical experiment name
+        # select the analytical biology_concept_experiments name
         driver.find_element_by_xpath('//*[@id="witnessRequestsHolder"]/div/div[2]/table/tbody/tr[1]/td[2]/a').click()
         button = driver.find_element_by_css_selector('#witnessButtons > a:nth-child(1)')
         button.click()

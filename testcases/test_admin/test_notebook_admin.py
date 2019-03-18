@@ -25,10 +25,10 @@ from selenium.webdriver.support.ui import Select
 
 class TestCreatenotebookAdmin(unittest.TestCase):
 
-    @allure.testcase('test create notebook by Admin')
+    @allure.testcase('test create notebooks by Admin')
     def test1(self):
         driver = testadminlogin()
-        # create notebook by admin
+        # create notebooks by admin
         driver.find_element_by_id('createNewNotebookLeftNavButton').click()
         driver.find_element_by_id('notebookName').send_keys('Test_Note_book_QW')
         driver.find_element_by_name('notebookDescription').send_keys('Test Script execution-01/01/2019')
@@ -51,7 +51,7 @@ class TestCreatenotebookAdmin(unittest.TestCase):
             driver.get_screenshot_as_file(picture_name)
         self.assertTrue(valid)
 
-        # Share notebook with Joe Chemistry
+        # Share notebooks with Joe Chemistry
         driver.find_element_by_id('shareNotebookLink').click()
         driver.find_element_by_class_name('groupSelectLink').click()
         driver.find_element_by_id('listGroupCheckUser-1786').click()

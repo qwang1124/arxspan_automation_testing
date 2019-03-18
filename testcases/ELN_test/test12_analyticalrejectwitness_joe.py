@@ -1,16 +1,16 @@
 # Test ID: testELN-012
-# Test name: Joe witnessing rejected analytical experiment and send request to Jane Test
+# Test name: Joe witnessing rejected analytical biology_concept_experiments and send request to Jane Test
 # Expect output:
 #      1. Witnessing successful;
-#      2. Add new note to the experiment;
+#      2. Add new note to the biology_concept_experiments;
 #      3. Send the request to Jane again;
 # Step description:
 #      1. Open the Chrome driver;
 #      2. Login Joe as the user;
 #      3. Choose 'Model Test Script Company' as the company ;
-#      4. Select the analytical experiment and select the notes table;
+#      4. Select the analytical biology_concept_experiments and select the notes table;
 #      5. Verify the rejection is showing;
-#      6. Add a new note to the experiment;
+#      6. Add a new note to the biology_concept_experiments;
 #      7. Sign & Close, selecting Jane Biologist as the Witness;
 #      8. Log out.
 import time
